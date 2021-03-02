@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,200,500&display=swap&subset=chinese-traditional");
+@import "reset";
+html,
+body {
+  font-family: "Noto Sans TC", "PingFang SC", "微軟正黑體", Arial, sans-serif;
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: $text-primary;
+}
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  height: 1600px;
+}
