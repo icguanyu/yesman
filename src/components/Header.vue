@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <router-link to="/">關於YES,MAN</router-link>
+    <router-link to="/">關於YESMAN</router-link>
     <router-link to="/">欣賞作品</router-link>
     <router-link to="/">環境</router-link>
     <router-link to="/">方案</router-link>
@@ -14,7 +14,7 @@
     mounted() {
       $(window).scroll(function () {
         let scrollTop = $(window).scrollTop();
-        if (scrollTop > 0) {
+        if (scrollTop > 100) {
           $("#nav").addClass("active");
         } else {
           $("#nav").removeClass("active");
@@ -31,11 +31,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
+    position: fixed;
     left: 0;
     top: 0;
     transition: all 0.3s;
     box-shadow: 0px 5px 20px rgba(rgb(117, 117, 117), 0.1);
+    background: white;
+    z-index: 2;
     a {
       display: inline-block;
       padding: 40px 30px;
