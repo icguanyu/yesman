@@ -6,6 +6,7 @@
       <swiper-slide id="bg_3"></swiper-slide>
 
     </swiper>
+    <div id="particles-js"></div>
     <div class="scroll">
       <p>Scroll to discover</p>
       <div class="box">
@@ -17,6 +18,7 @@
 </template>
 
 <script>
+  import "particles.js";
   import "swiper/swiper-bundle.css";
   import { Swiper, SwiperSlide } from "vue-awesome-swiper";
   export default {
@@ -43,6 +45,64 @@
         },
       };
     },
+    mounted() {
+      window.particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 40,
+            density: { enable: true, value_area: 3000 },
+          },
+          color: { value: "#ffffff" },
+          shape: {
+            type: "image",
+            image: {
+              src: require("@/assets/images/others/soap_bubbles_PNG48.png"),
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0,
+            random: true,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 50,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 60,
+              size_min: 40,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: "top",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 3945.7382081613637,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: false },
+            onclick: { enable: false },
+          },
+        },
+        retina_detect: true,
+      });
+    },
   };
 </script>
 
@@ -50,6 +110,14 @@
   .top-swiper {
     width: 100%;
     height: 100vh;
+  }
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
   .swiper {
     width: 100%;
@@ -66,7 +134,7 @@
       }
     }
     #bg_1 {
-      background-image: url("https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+      background-image: url("https://images.unsplash.com/photo-1440288736878-766bd5839edb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80");
     }
     #bg_2 {
       background-image: url("https://images.unsplash.com/photo-1475178278683-8c225ae5ec3e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
