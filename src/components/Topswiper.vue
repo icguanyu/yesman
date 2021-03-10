@@ -46,62 +46,62 @@
       };
     },
     mounted() {
-      window.particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: 40,
-            density: { enable: true, value_area: 3000 },
-          },
-          color: { value: "#ffffff" },
-          shape: {
-            type: "image",
-            image: {
-              src: require("@/assets/images/others/soap_bubbles_PNG48.png"),
-              width: 100,
-              height: 100,
-            },
-          },
-          opacity: {
-            value: 0,
-            random: true,
-            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
-          },
-          size: {
-            value: 50,
-            random: true,
-            anim: {
-              enable: false,
-              speed: 60,
-              size_min: 40,
-              sync: false,
-            },
-          },
-          line_linked: {
-            enable: false,
-          },
-          move: {
-            enable: true,
-            speed: 3,
-            direction: "top",
-            random: true,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 3945.7382081613637,
-              rotateY: 1200,
-            },
-          },
-        },
-        interactivity: {
-          events: {
-            onhover: { enable: false },
-            onclick: { enable: false },
-          },
-        },
-        retina_detect: true,
-      });
+      // window.particlesJS("particles-js", {
+      //   particles: {
+      //     number: {
+      //       value: 40,
+      //       density: { enable: true, value_area: 3000 },
+      //     },
+      //     color: { value: "#ffffff" },
+      //     shape: {
+      //       type: "image",
+      //       image: {
+      //         src: require("@/assets/images/others/soap_bubbles_PNG48.png"),
+      //         width: 100,
+      //         height: 100,
+      //       },
+      //     },
+      //     opacity: {
+      //       value: 0,
+      //       random: true,
+      //       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+      //     },
+      //     size: {
+      //       value: 50,
+      //       random: true,
+      //       anim: {
+      //         enable: false,
+      //         speed: 60,
+      //         size_min: 40,
+      //         sync: false,
+      //       },
+      //     },
+      //     line_linked: {
+      //       enable: false,
+      //     },
+      //     move: {
+      //       enable: true,
+      //       speed: 3,
+      //       direction: "top",
+      //       random: true,
+      //       straight: false,
+      //       out_mode: "out",
+      //       bounce: false,
+      //       attract: {
+      //         enable: false,
+      //         rotateX: 3945.7382081613637,
+      //         rotateY: 1200,
+      //       },
+      //     },
+      //   },
+      //   interactivity: {
+      //     events: {
+      //       onhover: { enable: false },
+      //       onclick: { enable: false },
+      //     },
+      //   },
+      //   retina_detect: true,
+      // });
     },
   };
 </script>
@@ -118,6 +118,9 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    background: rgba(black, 0.2);
+    // background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+    background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
   }
   .swiper {
     width: 100%;

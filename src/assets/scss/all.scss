@@ -1,14 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:200,300,500&display=swap&subset=chinese-traditional");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500,700&display=swap&subset=chinese-traditional");
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Monoton&display=swap");
 @import "reset";
+::selection {
+  background: #000;
+  color: #fff;
+}
 html,
 body {
   font-family: "Noto Sans TC", "PingFang SC", "微軟正黑體", Arial, sans-serif;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 1px;
   color: $text-primary;
-  font-weight: 200;
+  font-weight: 300;
 }
 * {
   position: relative;
@@ -20,10 +24,10 @@ body {
   background-position: center center;
 }
 .bg-text {
-  
-  font-family: sans;
+  // font-family: sans;
   font-weight: bold;
-  text-shadow: -1px 0 #aaa, 0 1px #aaa, 1px 0 #aaa, 0 -1px #aaa;
+  color: transparent;
+  -webkit-text-stroke: 1px #ddd;
 }
 .bg-mask {
   position: relative;

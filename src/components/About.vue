@@ -6,7 +6,7 @@
       <div class="bg-text about-bg-text">about</div>
       <div class="about-title">
         <p>關於</p>
-        <p style="font-weight:bold">YESMAN</p>
+        <p style="font-weight:700">YESMAN</p>
       </div>
       <div class="about-desc">
         <p>我們是一群在台北工作的七年級生，各自從事攝影相關行業<br>
@@ -38,12 +38,11 @@
     }
   }
   .about-title {
-    font-size: 2rem;
-    line-height: 2.4rem;
+    font-size: 2.8rem;
+    line-height: 3rem;
     letter-spacing: 4px;
     color: white;
-    font-weight: 200;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     z-index: 5;
   }
   .about-desc {
