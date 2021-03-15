@@ -182,13 +182,13 @@
       }
     }
     #bg_1 {
-      background-image: url("https://images.unsplash.com/photo-1440288736878-766bd5839edb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80");
+      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/379202_674043.jpeg");
     }
     #bg_2 {
-      background-image: url("https://images.unsplash.com/photo-1475178278683-8c225ae5ec3e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/464449_494215.jpeg");
     }
     #bg_3 {
-      background-image: url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1024&q=80"');
+      background-image: url('https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/996294_57001.jpeg');
     }
   }
   .scroll {
