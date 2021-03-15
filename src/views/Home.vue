@@ -6,6 +6,7 @@
     <Works />
     <Env />
     <Intro />
+    <PhotoGrid />
   </div>
 </template>
 
@@ -16,9 +17,10 @@
   import Works from "@/components/Works.vue";
   import Env from "@/components/Enviroment.vue";
   import Intro from "@/components/Intro.vue";
+  import PhotoGrid from "@/components/PhotoGrid.vue";
   export default {
     name: "Home",
-    components: { Social, TopSwiper, About, Works, Env, Intro },
+    components: { Social, TopSwiper, About, Works, Env, Intro, PhotoGrid },
 
     created() {},
   };
