@@ -24,7 +24,7 @@
     overflow: hidden;
     .photo {
       width: 200%;
-      animation: scroll-grid 18s linear infinite;
+      animation: scroll-grid 20s linear infinite;
       img {
         width: 50%;
       }

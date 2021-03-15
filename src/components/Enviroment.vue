@@ -9,7 +9,7 @@
       <div class="body">
         <article class="desc">
           本工作室於新莊區設立擁有近40坪的立體攝影棚，場景風格有清新乾淨、可愛活潑、正式等多種風格，共10多個場景
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae maiores cumque eligendi voluptates
+          ，<b>放更多環境介紹的文案</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae maiores cumque eligendi voluptates
           voluptatum ab unde aperiam incidunt ratione similique odit perspiciatis excepturi quos quo placeat, veniam
           repudiandae sint?
         </article>
@@ -76,7 +76,7 @@
           }
           .features-list {
             padding: 40px;
-            margin-top: 100px;
+            margin-top: 50px;
             margin-left: -300px;
             background: rgba(white, 1);
             display: flex;

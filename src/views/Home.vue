@@ -1,12 +1,14 @@
 <template>
   <div class="main">
+
     <Social />
     <TopSwiper />
     <About />
     <Works />
+    <PhotoGrid />
     <Env />
     <Intro />
-    <PhotoGrid />
+
   </div>
 </template>
 
@@ -20,7 +22,15 @@
   import PhotoGrid from "@/components/PhotoGrid.vue";
   export default {
     name: "Home",
-    components: { Social, TopSwiper, About, Works, Env, Intro, PhotoGrid },
+    components: {
+      Social,
+      TopSwiper,
+      About,
+      Works,
+      Env,
+      Intro,
+      PhotoGrid,
+    },
 
     created() {},
   };

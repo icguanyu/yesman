@@ -6,7 +6,13 @@
       <swiper-slide id="bg_3"></swiper-slide>
 
     </swiper>
-    <div id="particles-js"></div>
+    <div id="particles-js">
+      <div class="title">
+        <h3>用鏡頭留下最珍貴的記憶</h3>
+        <h1 id="sunnyday">YESMAN</h1>
+        <h2>Photography Studio</h2>
+      </div>
+    </div>
     <div class="scroll">
       <p>Scroll to discover</p>
       <div class="box">
@@ -121,6 +127,45 @@
     background: rgba(black, 0.2);
     // background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
     background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {
+      color: white;
+      text-align: center;
+      h3 {
+        font-weight: 300;
+        letter-spacing: 8px;
+      }
+      h1 {
+        font-weight: 600;
+        color: white;
+        font-size: 4rem;
+        margin: 18px 0;
+        letter-spacing: 20px;
+        background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      h2 {
+        position: relative;
+        display: inline-block;
+        padding-top: 18px;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 6px;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 50%;
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 1px;
+          background: #fff;
+        }
+      }
+    }
   }
   .swiper {
     width: 100%;
@@ -151,48 +196,48 @@
     z-index: 3;
     position: absolute;
     padding: 10px;
-    bottom: -30px;
-    left: 10px;
-    transform-origin: top left;
-    transform: rotate(-90deg);
+    bottom: 0px;
+    right: 30px;
+    // transform-origin: top right;
+    // transform: rotate(-90deg);
+    writing-mode: vertical-rl;
     p {
       color: white;
       font-weight: 200;
     }
     .box {
       position: relative;
-      height: 10px;
-      width: 100%;
+      height: 100%;
+      width: 15px;
       overflow: hidden;
-      margin-top: 5px;
       span {
         display: block;
         position: absolute;
-        right: 0;
+        right: 5px;
         top: 0;
-        width: 100%;
-        height: 1px;
+        width: 1px;
+        height: 100%;
         background: white;
-        animation: grow 1.8s linear infinite;
+        animation: grow 2s linear infinite;
         &:after {
           content: "";
           position: absolute;
-          width: 10px;
+          width: 8px;
           height: 1px;
           background: white;
-          transform: rotate(30deg);
-          top: 3px;
-          left: 0px;
+          transform: rotate(45deg);
+          bottom: 4px;
+          right: 0px;
         }
       }
     }
   }
   @keyframes grow {
     0% {
-      transform: translateX(100%);
+      transform: translateY(-100%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateY(100%);
     }
   }
 </style>

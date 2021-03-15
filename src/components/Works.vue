@@ -7,38 +7,25 @@
           <p>最新作品</p><span>WORKS</span>
         </div>
       </div>
-
-    </div>
-    <div class="mySwiper">
-      <swiper class="swiper" :options="swiperOptions">
-        <swiper-slide>
-          <img src="https://fakeimg.pl/400x400/a9a9a9/888/?retina=1" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="https://fakeimg.pl/400x400/a9a9a9/888/?retina=1" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="https://fakeimg.pl/400x400/a9a9a9/888/?retina=1" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="https://fakeimg.pl/400x400/a9a9a9/888/?retina=1" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="https://fakeimg.pl/400x400/a9a9a9/888/?retina=1" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="https://fakeimg.pl/400x400/a9a9a9/888/?retina=1" alt="">
-        </swiper-slide>
-      </swiper>
-      <div class="navigation">
-        <div class="button-next">
-          <box-icon name='chevron-right' color="#fff"></box-icon>
+      <div class="body">
+        <div class="mySwiper">
+          <swiper class="swiper" :options="swiperOptions">
+            <swiper-slide v-for="i in 14" :key="i">
+              <img :src="`https://fakeimg.pl/400x400/333/ddd/?retina=1&text=${i}`" alt="">
+            </swiper-slide>
+          </swiper>
+          <div class="navigation">
+            <div class="button-prev">
+              <box-icon name='chevron-left' color="#fff"></box-icon>
+            </div>
+            <div class="button-next">
+              <box-icon name='chevron-right' color="#fff"></box-icon>
+            </div>
+          </div>
         </div>
-        <div class="button-prev">
-          <box-icon name='chevron-left' color="#fff"></box-icon>
-        </div>
+        <div class="more">更多作品</div>
       </div>
-      <div class="more">更多作品</div>
+
     </div>
 
   </div>
@@ -56,8 +43,8 @@
     data() {
       return {
         swiperOptions: {
-          slidesPerView: 4,
-          loop: true,
+          slidesPerView: 3,
+          slidesPerColumn: 2,
           spaceBetween: 5,
           navigation: {
             nextEl: ".button-next",
@@ -65,7 +52,8 @@
           },
           breakpoints: {
             1080: {
-              slidesPerView: 5,
+              slidesPerView: 4,
+              slidesPerColumn: 2,
             },
           },
         },
@@ -76,8 +64,8 @@
 
 <style lang="scss" scoped>
   .container {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 50px;
     .content {
       margin-bottom: 10px;
       .works-title {
@@ -102,40 +90,51 @@
         z-index: 1;
       }
     }
-    .mySwiper {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      .swiper {
-        width: 70%;
-        margin: 0;
-        .swiper-slide {
-          img {
-            width: 100%;
+    .body {
+      .mySwiper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .swiper-container {
+          flex: 1;
+        }
+        .swiper {
+          height: 530px;
+          .swiper-slide {
+            height: 260px;
+            img {
+              height: 100%;
+              width: 100%;
+            }
           }
         }
-      }
-      .navigation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 5px;
-        .button-next,
-        .button-prev {
-          cursor: pointer;
-          padding: 5px;
-          margin: 3px;
-          background: #000;
+        .navigation {
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .button-next {
+            margin-right: -10px;
+          }
+          .button-prev {
+            margin-left: -10px;
+          }
+          .button-next,
+          .button-prev {
+            cursor: pointer;
+            padding: 5px;
+            background: #000;
+          }
         }
       }
       .more {
         cursor: pointer;
         color: white;
         padding: 15px 40px;
+        text-align: center;
         background: #222;
-        margin-left: auto;
-        margin-right: auto;
       }
     }
   }
