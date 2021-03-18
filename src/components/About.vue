@@ -53,10 +53,11 @@
       .body {
         border: 1px solid #ddd;
         display: flex;
+        justify-content: space-between;
         width: 100%;
         height: 400px;
+        background: rgba(white, 0.95);
         .desc {
-          background: rgba(white, 0.95);
           padding: 40px;
           line-height: 2.2rem;
           letter-spacing: 1px;
@@ -69,8 +70,10 @@
         .about-bg {
           width: 400px;
           height: 100%;
+
           background-image: url("https://images.unsplash.com/photo-1615458509633-f15b61bdacb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
           // margin-bottom: -100px;
+          
         }
       }
     }
