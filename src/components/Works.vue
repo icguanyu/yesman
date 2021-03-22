@@ -43,17 +43,15 @@
     data() {
       return {
         swiperOptions: {
-          slidesPerView: 3,
-          slidesPerColumn: 2,
+          slidesPerView: 1,
           spaceBetween: 5,
           navigation: {
             nextEl: ".button-next",
             prevEl: ".button-prev",
           },
           breakpoints: {
-            1080: {
+            768: {
               slidesPerView: 4,
-              slidesPerColumn: 2,
             },
           },
         },
@@ -97,9 +95,9 @@
         align-items: center;
         .swiper-container {
           flex: 1;
+          margin-bottom: 10px;
         }
         .swiper {
-          height: 530px;
           .swiper-slide {
             height: 260px;
             img {
@@ -131,10 +129,30 @@
       }
       .more {
         cursor: pointer;
-        color: white;
         padding: 15px 40px;
         text-align: center;
-        background: #222;
+        border: 1px solid #222;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 0;
+      .content {
+        padding: 30px 5%;
+        .head {
+          .works-title {
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 2rem;
+            margin-bottom: 5px;
+            span {
+              margin-left: 0;
+              margin-top: 5px;
+              font-size: 1.6rem;
+            }
+          }
+        }
       }
     }
   }

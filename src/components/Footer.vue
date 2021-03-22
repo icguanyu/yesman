@@ -15,8 +15,8 @@
 
         </div>
       </div>
-      <div class="social-links"></div>
     </div>
+
     <div class="copyright">Copyright © 2021 Yesman Photography Studio,All rights reserved.</div>
   </div>
 </template>
@@ -35,7 +35,7 @@
     // background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
     background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
     .content {
-      width: 1080px;
+      max-width: 1080px;
       margin: auto;
       display: flex;
       padding: 30px 0;
@@ -55,7 +55,7 @@
           font-weight: 200;
           font-size: 1rem;
           line-height: 1.8rem;
-          p{
+          p {
             margin-bottom: 20px;
           }
         }
@@ -67,6 +67,44 @@
       text-align: center;
       font-size: 0.8rem;
       padding: 10px 0;
+    }
+  }
+  @media (max-width: 768px) {
+    #footer {
+      .content {
+        width: 100%;
+        padding: 30px 5%;
+        .company {
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          .company-logo {
+            width: 150px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            img {
+              width: 100%;
+            }
+          }
+          .company-info {
+            color: white;
+            font-weight: 200;
+            font-size: 1rem;
+            line-height: 1.8rem;
+            p {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+      .copyright {
+        background: rgb(5, 5, 5);
+        color: #ddd;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 10px 0;
+      }
     }
   }
 </style>

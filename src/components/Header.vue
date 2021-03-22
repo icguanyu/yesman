@@ -1,17 +1,45 @@
 <template>
-  <div id="nav">
-    <a class="logo">YESMAN</a>
-    <router-link to="/">關於</router-link>
-    <router-link to="/">作品</router-link>
-    <router-link to="/">環境</router-link>
-    <router-link to="/">方案</router-link>
+  <div>
+    <div id="nav">
+      <router-link class="logo" to="/">YESMAN</router-link>
+      <router-link to="/">關於</router-link>
+      <router-link to="/">作品</router-link>
+      <router-link to="/">環境</router-link>
+      <router-link to="/">方案</router-link>
+    </div>
+    <div id="nav_mobile" @click="drawer = true">
+      <box-icon name='menu'></box-icon>
+    </div>
+
+    <el-drawer :visible.sync="drawer" direction="ltr" size="100%" :with-header="false">
+      <div class="drawer-content">
+        <div class="close" @click="drawer = false">
+          <box-icon name='x'></box-icon>
+        </div>
+        <div class="content">
+          <router-link class="logo" to="/">YESMAN</router-link>
+          <router-link to="/">關於</router-link>
+          <router-link to="/">作品</router-link>
+          <router-link to="/">環境</router-link>
+          <router-link to="/">方案</router-link>
+        </div>
+      </div>
+
+    </el-drawer>
+
   </div>
+
 </template>
 
 <script>
   import $ from "jquery";
   export default {
     name: "my-header",
+    data() {
+      return {
+        drawer: false,
+      };
+    },
     mounted() {
       $(window).scroll(function () {
         let scrollTop = $(window).scrollTop();
@@ -64,6 +92,51 @@
     a {
       padding: 30px;
       transition: all 0.3s;
+    }
+  }
+  #nav_mobile {
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: white;
+  }
+  .drawer-content {
+    height: 100vh;
+    .close {
+      cursor: pointer;
+      margin-right: auto;
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content {
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      a {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    #nav {
+      display: none;
+    }
+    #nav_mobile {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 </style>

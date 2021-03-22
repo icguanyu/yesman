@@ -50,4 +50,10 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .social-links {
+      display: none;
+    }
+  }
 </style>

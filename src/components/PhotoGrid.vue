@@ -38,4 +38,9 @@
       transform: translateX(-50%);
     }
   }
+  @media (max-width: 768px) {
+    .photo-grid {
+      display: none;
+    }
+  }
 </style>
