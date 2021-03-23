@@ -6,8 +6,15 @@
       <swiper-slide id="bg_3"></swiper-slide>
 
     </swiper>
+    <div id="particles-js">
+      <div class="title">
+        <h3>用鏡頭留下最珍貴的記憶</h3>
+        <h1 id="sunnyday">YESMAN</h1>
+        <h2>Photography Studio</h2>
+      </div>
+    </div>
     <div class="scroll">
-      <p>Scroll to discover</p>
+      <p>Scroll</p>
       <div class="box">
         <span></span>
       </div>
@@ -17,6 +24,7 @@
 </template>
 
 <script>
+  import "particles.js";
   import "swiper/swiper-bundle.css";
   import { Swiper, SwiperSlide } from "vue-awesome-swiper";
   export default {
@@ -43,6 +51,64 @@
         },
       };
     },
+    mounted() {
+      // window.particlesJS("particles-js", {
+      //   particles: {
+      //     number: {
+      //       value: 40,
+      //       density: { enable: true, value_area: 3000 },
+      //     },
+      //     color: { value: "#ffffff" },
+      //     shape: {
+      //       type: "image",
+      //       image: {
+      //         src: require("@/assets/images/others/soap_bubbles_PNG48.png"),
+      //         width: 100,
+      //         height: 100,
+      //       },
+      //     },
+      //     opacity: {
+      //       value: 0,
+      //       random: true,
+      //       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+      //     },
+      //     size: {
+      //       value: 50,
+      //       random: true,
+      //       anim: {
+      //         enable: false,
+      //         speed: 60,
+      //         size_min: 40,
+      //         sync: false,
+      //       },
+      //     },
+      //     line_linked: {
+      //       enable: false,
+      //     },
+      //     move: {
+      //       enable: true,
+      //       speed: 3,
+      //       direction: "top",
+      //       random: true,
+      //       straight: false,
+      //       out_mode: "out",
+      //       bounce: false,
+      //       attract: {
+      //         enable: false,
+      //         rotateX: 3945.7382081613637,
+      //         rotateY: 1200,
+      //       },
+      //     },
+      //   },
+      //   interactivity: {
+      //     events: {
+      //       onhover: { enable: false },
+      //       onclick: { enable: false },
+      //     },
+      //   },
+      //   retina_detect: true,
+      // });
+    },
   };
 </script>
 
@@ -50,6 +116,57 @@
   .top-swiper {
     width: 100%;
     height: 100vh;
+    z-index: 1;
+  }
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(black, 0.2);
+    // background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+    background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {
+      color: white;
+      text-align: center;
+      h3 {
+        font-weight: 300;
+        letter-spacing: 8px;
+      }
+      h1 {
+        font-weight: 600;
+        color: white;
+        font-size: 4rem;
+        margin: 18px 0;
+        letter-spacing: 20px;
+        background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      h2 {
+        position: relative;
+        display: inline-block;
+        padding-top: 18px;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 6px;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 50%;
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 1px;
+          background: #fff;
+        }
+      }
+    }
   }
   .swiper {
     width: 100%;
@@ -66,13 +183,13 @@
       }
     }
     #bg_1 {
-      background-image: url("https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/379202_674043.jpeg");
     }
     #bg_2 {
-      background-image: url("https://images.unsplash.com/photo-1475178278683-8c225ae5ec3e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/464449_494215.jpeg");
     }
     #bg_3 {
-      background-image: url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1024&q=80"');
+      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/996294_57001.jpeg");
     }
   }
   .scroll {
@@ -80,48 +197,75 @@
     z-index: 3;
     position: absolute;
     padding: 10px;
-    bottom: -30px;
-    left: 10px;
-    transform-origin: top left;
-    transform: rotate(-90deg);
+    bottom: 0px;
+    right: 30px;
+    // transform-origin: top right;
+    // transform: rotate(-90deg);
+    writing-mode: vertical-rl;
     p {
       color: white;
       font-weight: 200;
+      letter-spacing: 5px;
     }
     .box {
       position: relative;
-      height: 10px;
-      width: 100%;
+      height: 100%;
+      width: 15px;
       overflow: hidden;
-      margin-top: 5px;
       span {
         display: block;
         position: absolute;
-        right: 0;
+        right: 5px;
         top: 0;
-        width: 100%;
-        height: 1px;
+        width: 1px;
+        height: 100%;
         background: white;
-        animation: grow 1.8s linear infinite;
-        &:after {
-          content: "";
-          position: absolute;
-          width: 10px;
-          height: 1px;
-          background: white;
-          transform: rotate(30deg);
-          top: 3px;
-          left: 0px;
-        }
+        animation: grow 2s linear infinite;
       }
     }
   }
   @keyframes grow {
     0% {
-      transform: translateX(100%);
+      transform: translateY(-100%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateY(100%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    #particles-js {
+      .title {
+        h3 {
+          letter-spacing: 4px;
+        }
+        h1 {
+          font-size: 3rem;
+          margin: 12px 0;
+          letter-spacing: 10px;
+        }
+        h2 {
+          font-size: 0.8rem;
+          letter-spacing: 4px;
+        }
+      }
+    }
+
+    .scroll {
+      position: relative;
+      z-index: 3;
+      position: absolute;
+      padding: 10px;
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%);
+      writing-mode: vertical-rl;
+      p {
+        letter-spacing: 2px;
+      }
+      .box {
+        width: 20px;
+      }
     }
   }
 </style>

@@ -1,17 +1,17 @@
 <template>
   <div id="footer">
     <div class="content">
-      <div class="company">
-        <div class="company-logo">
-          <img src="https://fakeimg.pl/200x200/#ccc/#333/" alt="Yesman Photography Studio">
+      <div class="block">
+        <div class="title" @click="back">
+          <h1>YESMAN</h1>
+          <p>- Photography Studio -</p>
         </div>
-        <div class="company-info">
-          <p>新北市新莊區五工三路86巷10號1樓</p>
-          <p>TEL：(02)2298-8017</p>
-        </div>
+        <p>新北市新莊區五工三路86巷10號1樓</p>
+        <p>ADVERTISING & MARKETING</p>
+        <p>TEL. (02) 2298-8017 /MAIL. example@gmail.com</p>
       </div>
-      <div class="social-links"></div>
     </div>
+
     <div class="copyright">Copyright © 2021 Yesman Photography Studio,All rights reserved.</div>
   </div>
 </template>
@@ -19,40 +19,76 @@
 <script>
   export default {
     name: "my-footer",
+    methods: {
+      back() {
+        this.$router.push("/");
+        window.scrollTo(0, 0);
+      },
+    },
   };
 </script>
 
 <style lang="scss" scoped>
   #footer {
     width: 100%;
-    background: #333;
+    background: #f8f8f8;
+    // background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
     .content {
-      width: 80%;
+      max-width: 1080px;
       margin: auto;
+      padding-top: 80px;
+      padding-bottom: 20px;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
       display: flex;
-      padding: 30px 0;
-      .company {
-        display: flex;
-        align-items: center;
-        .company-logo {
-          width: 80px;
-          margin-right: 20px;
-          img {
-            width: 100%;
+      justify-content: center;
+      .block {
+        text-align: center;
+        display: inline-block;
+        .title {
+          h1 {
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 500;
+            padding: 3px 10px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(180deg, #555, #555);
+            background-size: 0 1px;
+            background-position: 100% 100%;
+            transition: background-size 0.4s cubic-bezier(0.2, 0.6, 0.35, 1);
+            &:hover {
+              background-size: 100% 1px;
+              background-position: 0 100%;
+            }
+          }
+          margin-bottom: 5px;
+          p {
+            font-style: italic;
           }
         }
-        .company-info {
-          color: #ddd;
-          font-size: 1rem;
-          line-height: 2rem;
+        p {
+          font-size: 12px;
+          line-height: 16px;
         }
       }
     }
     .copyright {
-      color: #ddd;
       text-align: center;
       font-size: 0.8rem;
       padding: 10px 0;
+    }
+  }
+  @media (max-width: 768px) {
+    #footer {
+      .content {
+        width: 100%;
+        padding: 20px 5%;
+      }
+      .copyright {
+        font-size: 0.6rem;
+        padding: 5px 0;
+      }
     }
   }
 </style>
