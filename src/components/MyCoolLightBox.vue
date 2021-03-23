@@ -7,7 +7,8 @@
         </el-col>
       </el-row>
     </div>
-    <CoolLightBox :items="items" :index="index" :fullScreen="true" :useZoomBar="true" :enableScrollLock="false" @close="index = null">
+    <CoolLightBox :items="items" :index="index" :fullScreen="true" :useZoomBar="true"
+      :enableScrollLock="enableScrollLock" @close="index = null">
     </CoolLightBox>
   </div>
 </template>
@@ -23,8 +24,14 @@
     },
     data() {
       return {
+        enableScrollLock: window.innerWidth < 768 ? true : false,
         index: null,
       };
+    },
+    created() {
+      window.addEventListener("resize", () => {
+        this.enableScrollLock = window.innerWidth < 768 ? true : false;
+      });
     },
   };
 </script>

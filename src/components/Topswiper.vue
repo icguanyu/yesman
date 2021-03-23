@@ -123,10 +123,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 1;
     background: rgba(black, 0.2);
-    // background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
     background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
     display: flex;
     justify-content: center;

@@ -108,7 +108,7 @@
             line-height: 2.2rem;
             letter-spacing: 1px;
             color: #555;
-            font-weight: 300;
+            font-weight: normal;
             letter-spacing: 1px;
             align-items: stretch;
             box-sizing: border-box;

@@ -61,8 +61,16 @@
     methods: {
       push(tag) {
         this.drawer = false;
-        let targetTop = document.getElementById(tag).offsetTop;
-        window.scrollTo({ top: targetTop, behavior: "smooth" });
+        let target = document.getElementById(tag);
+        if (target) {
+          window.scrollTo({ top: target.offsetTop, behavior: "smooth" });
+        } else {
+          this.$router.push("/");
+          setTimeout(() => {
+            let target = document.getElementById(tag);
+            window.scrollTo({ top: target.offsetTop, behavior: "smooth" });
+          }, 200);
+        }
       },
     },
   };
