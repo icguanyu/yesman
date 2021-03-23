@@ -1,16 +1,16 @@
 <template>
   <div class="social-links">
     <a href="#">
-      <img src="../assets/images/icons/fb-icon.png" alt="fb">
+      <img src="../assets/images/icons/b_fb-icon.png" alt="fb">
     </a>
     <a href="#">
-      <img src="../assets/images/icons/instagram-icon.png" alt="instagram">
+      <img src="../assets/images/icons/b_instagram-icon.png" alt="instagram">
     </a>
     <a href="#">
-      <img src="../assets/images/icons/line-icon.png" alt="line">
+      <img src="../assets/images/icons/b_line-icon.png" alt="line">
     </a>
     <a href="#">
-      <img src="../assets/images/icons/messenger-icon.png" alt="messenger">
+      <img src="../assets/images/icons/b_messenger-icon.png" alt="messenger">
     </a>
   </div>
 </template>
@@ -37,8 +37,8 @@
     a {
       box-sizing: border-box;
       margin-bottom: 15px;
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
       display: block;
       transition: all 0.2s;
       &:hover {
@@ -54,6 +54,7 @@
   @media (max-width: 768px) {
     .social-links {
       right: 5px;
+      top: 30%;
     }
   }
 </style>
