@@ -99,7 +99,7 @@
 <style lang="scss" scoped>
   .container {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     background: #f8f8f8;
     .content {
       margin-bottom: 10px;

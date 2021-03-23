@@ -13,7 +13,7 @@
           </el-breadcrumb>
         </div>
 
-        <el-tabs v-model="activeName" tabPosition='top' @tab-click="handleClick" type="card">
+        <el-tabs v-model="activeName" :tabPosition='tabPosition' @tab-click="handleClick" type="card">
           <el-tab-pane label="新生兒寫真到府拍攝-A" name="a">
             <ServiceA />
           </el-tab-pane>
@@ -122,6 +122,7 @@
             price: "NT$2,400起",
           },
         ],
+        tabPosition: window.innerWidth < 768 ? "top" : "left",
       };
     },
     watch: {
@@ -132,6 +133,16 @@
     created() {
       window.scrollTo(0, 0);
       this.activeName = this.$route.query.s;
+      // if (
+      //   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      //     navigator.userAgent
+      //   )
+      // ) {
+      //   this.tabPosition = "top";
+      // }
+      window.addEventListener("resize", () => {
+        this.tabPosition = window.innerWidth < 768 ? "top" : "left";
+      });
     },
     methods: {
       handleClick(tab) {
@@ -177,5 +188,22 @@
       margin: 30px 0;
     }
   }
-  
+  @media (max-width: 768px) {
+    .container {
+      padding-bottom: 20px;
+      .banner {
+        height: 40vh;
+        .page-title {
+          letter-spacing: 2px;
+          font-size: 1.6rem;
+        }
+      }
+      .content {
+        padding: 5px 15px;
+      }
+      .breadcrumb {
+        margin: 15px 0;
+      }
+    }
+  }
 </style>

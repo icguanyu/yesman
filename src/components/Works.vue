@@ -38,7 +38,8 @@
 
       </div>
 
-      <CoolLightBox :items="items" :index="index" :fullScreen="true" :useZoomBar="true" @close="index = null">
+      <CoolLightBox :items="items" :index="index" :fullScreen="true" :useZoomBar="true" :enableScrollLock="false"
+        @close="index = null">
       </CoolLightBox>
 
     </div>

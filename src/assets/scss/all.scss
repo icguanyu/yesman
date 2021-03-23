@@ -59,4 +59,19 @@ body {
     margin: 0 auto;
   }
 }
+.el-tabs__nav-wrap.is-scrollable {
+  padding: 0 35px !important;
+}
 
+.el-tabs__nav-next,
+.el-tabs__nav-prev {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bebebe;
+  font-size: 22px !important;
+  line-height: 40px !important;
+  width: 35px !important;
+  color: #000 !important;
+  text-align: center;
+  font-weight: bold;
+}

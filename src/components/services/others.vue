@@ -49,7 +49,7 @@
     <el-collapse v-model="activeCollapse">
       <el-collapse-item name="1">
         <template slot="title">
-          拍攝注意事項<i class="header-icon el-icon-info"></i>
+          <div class="collspse-title"> 拍攝注意事項<i class="header-icon el-icon-info"></i></div>
         </template>
         <div class="content">
           <ol>
@@ -63,7 +63,7 @@
       </el-collapse-item>
       <el-collapse-item name="2">
         <template slot="title">
-          貼心提醒<i class="header-icon el-icon-info"></i>
+          <div class="collspse-title">貼心提醒<i class="header-icon el-icon-info"></i></div>
         </template>
         <div class="content">
           <ol>
@@ -128,20 +128,58 @@
       padding: 8px;
     }
   }
-
+  .collspse-title {
+    font-size: 1.1rem;
+  }
   .content {
     ol {
       padding-left: 30px;
       padding-right: 20px;
       padding-top: 10px;
       padding-bottom: 10px;
-      color: black;
       li {
         list-style: decimal;
         margin-bottom: 5px;
         line-height: 20px;
+        font-size: 1rem;
+        color: #333;
         &:last-child {
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .others {
+      margin-bottom: 30px;
+      overflow-x: scroll;
+      table {
+        min-width: 500px;
+        overflow: scroll-y;
+        td {
+          font-weight: normal;
+        }
+      }
+      .others-notes {
+        font-size: 14px;
+      }
+    }
+
+    .content {
+      ol {
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: black;
+        li {
+          list-style: decimal;
+          margin-bottom: 5px;
+          line-height: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }

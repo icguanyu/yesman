@@ -2,9 +2,9 @@
   <div class="wrap">
     <div class="title">新生兒寫真到府拍攝 - <span>NT$8,800元</span></div>
 
+    <MyCoolLightBox :items="items" />
     <el-row :gutter="20">
       <el-col :span="24">
-
         <el-card class="box-card" shadow="hover">
           <div class="service_intro">
             <ol>
@@ -44,11 +44,19 @@
 
 <script>
   import Others from "@/components/services/others";
+  import MyCoolLightBox from "@/components/MyCoolLightBox";
   export default {
     name: "service-a",
-    components: { Others },
+    components: { Others, MyCoolLightBox },
     data() {
-      return {};
+      return {
+        items: [
+          "https://images.unsplash.com/photo-1593642532400-2682810df593?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+          "https://images.unsplash.com/photo-1616323178155-8a029a5bba04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=655&q=80",
+          "https://images.unsplash.com/photo-1611095788646-86737a001141?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+          "https://images.unsplash.com/photo-1616457677567-5364b1cf37cb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80",
+        ],
+      };
     },
   };
 </script>

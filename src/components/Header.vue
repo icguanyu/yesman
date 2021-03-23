@@ -81,7 +81,7 @@
     transition: all 0.3s;
     box-shadow: 0px 5px 20px rgba(rgb(117, 117, 117), 0.1);
     background: white;
-    z-index: 2;
+    z-index: 3;
     .logo {
       position: relative;
       font-weight: bold;
@@ -96,6 +96,7 @@
       }
     }
     a {
+      cursor: pointer;
       font-weight: 500;
       display: inline-block;
       padding: 40px 30px;
