@@ -2,10 +2,10 @@
   <div>
     <div id="nav">
       <router-link class="logo" to="/">YESMAN</router-link>
-      <router-link to="/">關於</router-link>
-      <router-link to="/">作品</router-link>
-      <router-link to="/">環境</router-link>
-      <router-link to="/">方案</router-link>
+      <a @click="push('about')">關於</a>
+      <a @click="push('works')">作品</a>
+      <a @click="push('env')">環境</a>
+      <a @click="push('service')">方案</a>
     </div>
     <div id="nav_mobile" @click="drawer = true">
       <box-icon name='menu'></box-icon>
@@ -18,10 +18,10 @@
         </div>
         <div class="content">
           <router-link class="logo" to="/">YESMAN</router-link>
-          <router-link to="/">關於</router-link>
-          <router-link to="/">作品</router-link>
-          <router-link to="/">環境</router-link>
-          <router-link to="/">方案</router-link>
+          <a @click="push('about')">關於</a>
+          <a @click="push('works')">作品</a>
+          <a @click="push('env')">環境</a>
+          <a @click="push('service')">方案</a>
           <a href="#">
             <box-icon type='logo' name='facebook-circle'></box-icon>
           </a>
@@ -35,9 +35,7 @@
 
         </div>
       </div>
-
     </el-drawer>
-
   </div>
 
 </template>
@@ -60,6 +58,13 @@
           $("#nav").removeClass("active");
         }
       });
+    },
+    methods: {
+      push(tag) {
+        this.drawer = false;
+        let targetTop = document.getElementById(tag).offsetTop;
+        window.scrollTo({ top: targetTop, behavior: "smooth" });
+      },
     },
   };
 </script>
@@ -119,7 +124,7 @@
     height: 100vh;
     .close {
       cursor: pointer;
-      margin-right: auto;
+      margin-left: auto;
       width: 60px;
       height: 60px;
       display: inline-block;
@@ -158,7 +163,7 @@
     }
     #nav_mobile {
       position: fixed;
-      left: 0;
+      right: 0;
       top: 0;
       display: flex;
       justify-content: center;

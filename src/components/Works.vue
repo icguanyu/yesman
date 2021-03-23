@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="works">
     <div class="content">
       <div class="head">
         <!-- <div class="bg-text works-bg-text">WORKS</div> -->
@@ -29,9 +29,13 @@
               <div class="image" :style="{ backgroundImage: 'url(' + image + ')' }" @click="index = imageIndex"></div>
             </el-col>
           </el-row>
-
         </div>
-        <div class="more">更多作品</div>
+        <div class='btn-holder'>
+          <button class="btn btn-3 hover-border-1">
+            <span>更多作品</span>
+          </button>
+        </div>
+
       </div>
 
       <CoolLightBox :items="items" :index="index" :fullScreen="true" :useZoomBar="true" @close="index = null">
@@ -116,49 +120,67 @@
       }
     }
     .body {
-      // .mySwiper {
-      //   width: 100%;
-      //   display: flex;
-      //   align-items: center;
-      //   .swiper-container {
-      //     flex: 1;
-      //     margin-bottom: 10px;
-      //   }
-      //   .swiper {
-      //     .swiper-slide {
-      //       height: 260px;
-      //       img {
-      //         height: 100%;
-      //         width: 100%;
-      //       }
-      //     }
-      //   }
-      //   .navigation {
-      //     position: absolute;
-      //     z-index: 1;
-      //     width: 100%;
-      //     display: flex;
-      //     justify-content: space-between;
-      //     align-items: center;
-      //     .button-next {
-      //       margin-right: -10px;
-      //     }
-      //     .button-prev {
-      //       margin-left: -10px;
-      //     }
-      //     .button-next,
-      //     .button-prev {
-      //       cursor: pointer;
-      //       padding: 5px;
-      //       background: #000;
-      //     }
-      //   }
-      // }
-      .more {
-        cursor: pointer;
-        padding: 15px 40px;
+      .btn-holder {
+        width: 100%;
         text-align: center;
-        border: 1px solid #222;
+        margin: 10px 0;
+      }
+      .btn {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        min-width: 150px;
+        span {
+          position: relative;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          top: 0;
+          left: 0;
+          width: 100%;
+          padding: 15px 20px;
+          transition: 0.3s;
+          color: rgb(255, 255, 255);
+          background-color: rgb(54, 56, 55);
+        }
+        &::before,
+        &::after {
+          background: transparent;
+          z-index: 2;
+        }
+      }
+      .btn.hover-border-1::before,
+      .btn.hover-border-1::after {
+        position: absolute;
+        z-index: 1;
+        content: "";
+        width: 10%;
+        height: 25%;
+        transition: 0.35s;
+      }
+      .btn.hover-border-1::before {
+        top: 0;
+        left: 0;
+        border-left: 1px solid rgb(28, 31, 30);
+        border-top: 1px solid rgb(28, 31, 30);
+      }
+      .btn.hover-border-1::after {
+        bottom: 0;
+        right: 0;
+        border-right: 1px solid rgb(28, 31, 30);
+        border-bottom: 1px solid rgb(28, 31, 30);
+      }
+      .btn.hover-border-1:hover::before,
+      .btn.hover-border-1:hover::after {
+        width: 99%;
+        height: 98%;
       }
     }
   }
