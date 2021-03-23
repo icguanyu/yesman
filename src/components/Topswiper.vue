@@ -247,7 +247,7 @@
     z-index: 3;
     position: absolute;
     padding: 10px;
-    bottom: 0px;
+    bottom: 20px;
     right: 30px;
     // transform-origin: top right;
     // transform: rotate(-90deg);
@@ -255,7 +255,7 @@
     p {
       color: white;
       font-weight: 200;
-      letter-spacing: 5px;
+      letter-spacing: 2px;
     }
     .box {
       position: relative;
