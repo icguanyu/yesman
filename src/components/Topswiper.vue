@@ -168,6 +168,56 @@
       }
     }
   }
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(black, 0.2);
+    // background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+    background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {
+      color: white;
+      text-align: center;
+      h3 {
+        font-weight: 300;
+        letter-spacing: 8px;
+      }
+      h1 {
+        font-weight: 600;
+        color: white;
+        font-size: 4rem;
+        margin: 18px 0;
+        letter-spacing: 20px;
+        background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      h2 {
+        position: relative;
+        display: inline-block;
+        padding-top: 18px;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 6px;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 50%;
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 1px;
+          background: #fff;
+        }
+      }
+    }
+  }
   .swiper {
     width: 100%;
     background: black;
