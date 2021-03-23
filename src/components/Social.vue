@@ -23,7 +23,7 @@
 
 <style lang="scss" scoped>
   .social-links {
-    z-index: 1;
+    z-index: 5;
     position: fixed;
     right: 20px;
     top: 50%;
@@ -53,7 +53,7 @@
 
   @media (max-width: 768px) {
     .social-links {
-      display: none;
+      right: 5px;
     }
   }
 </style>
