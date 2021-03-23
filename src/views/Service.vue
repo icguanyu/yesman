@@ -13,7 +13,7 @@
           </el-breadcrumb>
         </div>
 
-        <el-tabs v-model="activeName" tabPosition='left' @tab-click="handleClick" type="card">
+        <el-tabs v-model="activeName" tabPosition='top' @tab-click="handleClick" type="card">
           <el-tab-pane label="新生兒寫真到府拍攝-A" name="a">
             <ServiceA />
           </el-tab-pane>
@@ -145,6 +145,7 @@
   .container {
     padding-bottom: 50px;
     .banner {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;

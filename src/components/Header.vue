@@ -17,7 +17,6 @@
           <box-icon name='x'></box-icon>
         </div>
         <div class="content">
-          <router-link class="logo" to="/">YESMAN</router-link>
           <a @click="push('about')">關於</a>
           <a @click="push('works')">作品</a>
           <a @click="push('env')">環境</a>
