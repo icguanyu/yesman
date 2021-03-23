@@ -4,7 +4,7 @@
     <TopSwiper />
     <About />
     <Works />
-    <PhotoGrid />
+    <!-- <PhotoGrid /> -->
     <Env />
     <Service />
 
@@ -17,7 +17,7 @@
   import Works from "@/components/Works.vue";
   import Env from "@/components/Enviroment.vue";
   import Service from "@/components/Service.vue";
-  import PhotoGrid from "@/components/PhotoGrid.vue";
+  // import PhotoGrid from "@/components/PhotoGrid.vue";
   export default {
     name: "Home",
     components: {
@@ -26,7 +26,6 @@
       Works,
       Env,
       Service,
-      PhotoGrid,
     },
 
     created() {},
