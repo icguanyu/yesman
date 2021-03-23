@@ -22,6 +22,17 @@
           <router-link to="/">作品</router-link>
           <router-link to="/">環境</router-link>
           <router-link to="/">方案</router-link>
+          <a href="#">
+            <box-icon type='logo' name='facebook-circle'></box-icon>
+          </a>
+          <a href="#">
+            <box-icon name='instagram' type='logo'></box-icon>
+          </a>
+          <a href="#">
+            <box-icon name='message-rounded-detail' type='solid'></box-icon>
+          </a>
+          <a href="#">LINE</a>
+
         </div>
       </div>
 
@@ -120,8 +131,22 @@
       padding: 10px;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       a {
+        display: inline-block;
         text-align: center;
+        padding: 20px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(180deg, #555, #555);
+        background-size: 0 1px;
+        background-position: 100% 100%;
+        transition: background-size 0.4s cubic-bezier(0.2, 0.6, 0.35, 1);
+      }
+      a:hover {
+        background-size: 100% 1px;
+        background-position: 0 100%;
       }
     }
   }

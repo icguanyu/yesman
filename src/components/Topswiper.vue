@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="scroll">
-      <p>Scroll to discover</p>
+      <p>Scroll</p>
       <div class="box">
         <span></span>
       </div>
@@ -188,7 +188,7 @@
       background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/464449_494215.jpeg");
     }
     #bg_3 {
-      background-image: url('https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/996294_57001.jpeg');
+      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/996294_57001.jpeg");
     }
   }
   .scroll {
@@ -204,6 +204,7 @@
     p {
       color: white;
       font-weight: 200;
+      letter-spacing: 5px;
     }
     .box {
       position: relative;
@@ -219,16 +220,6 @@
         height: 100%;
         background: white;
         animation: grow 2s linear infinite;
-        &:after {
-          content: "";
-          position: absolute;
-          width: 8px;
-          height: 1px;
-          background: white;
-          transform: rotate(45deg);
-          bottom: 4px;
-          right: 0px;
-        }
       }
     }
   }
@@ -238,6 +229,42 @@
     }
     100% {
       transform: translateY(100%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    #particles-js {
+      .title {
+        h3 {
+          letter-spacing: 4px;
+        }
+        h1 {
+          font-size: 3rem;
+          margin: 12px 0;
+          letter-spacing: 10px;
+        }
+        h2 {
+          font-size: 0.8rem;
+          letter-spacing: 4px;
+        }
+      }
+    }
+
+    .scroll {
+      position: relative;
+      z-index: 3;
+      position: absolute;
+      padding: 10px;
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%);
+      writing-mode: vertical-rl;
+      p {
+        letter-spacing: 2px;
+      }
+      .box {
+        width: 20px;
+      }
     }
   }
 </style>
