@@ -2,13 +2,14 @@
   <div class="container" id="service">
     <div class="content">
       <div class="head">
-        <div class="title">
+        <div class="title" data-aos="fade-down">
           <p>拍攝方案</p><span>SERVICES</span>
         </div>
       </div>
       <div class="body">
         <div class="services">
-          <div class="service" v-for="(s,idx) in services" :key="idx" @click="next(s.key)">
+          <div class="service" v-for="(s,idx) in services" :key="idx" @click="next(s.key)" data-aos="fade-down"
+            :data-aos-delay="100*(idx+1)">
             <div class="thumb" :id="`s_${idx}`"></div>
             <div class="content">
               <h1>{{s.title}}</h1>

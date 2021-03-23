@@ -2,12 +2,12 @@
   <section class="container" id="about">
     <div class="content">
       <div class="head">
-        <div class="title">
+        <div class="title" data-aos="fade-down">
           <p>關於YESMAN</p><span>ABOUT US</span>
         </div>
       </div>
       <div class="body">
-        <article class="desc">
+        <article class="desc" data-aos="fade-right">
           我們是一群在台北工作的七年級生，各自從事攝影相關行業<br>
           在一次的機緣大家相約聊天才發現：<br>
           原來我們都沒有屬於自己的全家福，才開始互相幫忙拍了彼此的全家福<br>
@@ -16,7 +16,7 @@
           但身體依舊離不開鏡頭，等待著孩子靠近拍攝，當下觸動了我們。<br>
           所以一起創立了『Yes Man專業攝影工作室』，來紀錄每個家庭這最幸福的時刻。
         </article>
-        <div class="bg-cover about-bg"></div>
+        <div class="bg-cover about-bg" data-aos="fade-left"></div>
       </div>
     </div>
   </section>
@@ -89,7 +89,7 @@
             align-items: flex-start;
             font-size: 2rem;
             margin-bottom: 5px;
-            span{
+            span {
               margin-left: 0;
               margin-top: 5px;
               font-size: 1.6rem;

@@ -3,7 +3,7 @@
     <div class="content">
       <div class="head">
         <!-- <div class="bg-text works-bg-text">WORKS</div> -->
-        <div class="works-title">
+        <div class="works-title" data-aos="fade-down">
           <p>最新作品</p><span>WORKS</span>
         </div>
       </div>
@@ -26,7 +26,8 @@
         <div class="images-wrapper">
           <el-row :gutter="5">
             <el-col :xs="8" :span="4" v-for="(image, imageIndex) in items" :key="imageIndex">
-              <div class="image" :style="{ backgroundImage: 'url(' + image + ')' }" @click="index = imageIndex"></div>
+              <div class="image" data-aos="flip-up" :data-aos-delay="50*(imageIndex+1)"
+                :style="{ backgroundImage: 'url(' + image + ')' }" @click="index = imageIndex"></div>
             </el-col>
           </el-row>
         </div>

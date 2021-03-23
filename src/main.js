@@ -16,6 +16,20 @@ https://github.com/surmon-china/vue-awesome-swiper
 import Swiper, { Autoplay, EffectFade, Navigation } from "swiper";
 Swiper.use([Autoplay, EffectFade, Navigation]);
 
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+AOS.init({
+  offset: 0,
+  delay: 200,
+  duration: 800,
+  easing: "ease",
+  once: true,
+  mirror: false,
+  anchorPlacement: "top-bottom",
+});
+Vue.use(AOS);
+
+
 new Vue({
   router,
   render: (h) => h(App),

@@ -2,21 +2,20 @@
   <div class="container" id="env">
     <div class="content">
       <div class="head">
-        <div class="title">
+        <div class="title" data-aos="fade-down">
           <p>拍攝環境</p><span>ENVIRONMENT</span>
         </div>
       </div>
       <div class="body">
-        <article class="desc">
-          本工作室於新莊區設立擁有近40坪的立體攝影棚，場景風格有清新乾淨、可愛活潑、正式等多種風格，共10多個場景
-          ，<b>放更多環境介紹的文案</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae maiores cumque
+        <article class="desc" data-aos="fade-down">
+          <b>環境介紹的文案</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae maiores cumque
           eligendi voluptates
           voluptatum ab unde aperiam incidunt ratione similique odit perspiciatis excepturi quos quo placeat, veniam
           repudiandae sint?
         </article>
         <div class="features">
-          <div class="features-bg"></div>
-          <div class="features-list">
+          <div class="features-bg" data-aos="fade-right"></div>
+          <div class="features-list" data-aos="fade-left">
             <div class="item"><span class="index">01</span>工作室位於新莊區</div>
             <div class="item"><span class="index">02</span>四十坪立體攝影棚</div>
             <div class="item"><span class="index">03</span>舒適無壓的拍攝環境</div>
@@ -115,17 +114,22 @@
           }
         }
         .body {
+          .desc {
+            margin-bottom: 10px;
+          }
           .features {
+            flex-direction: column-reverse;
             .features-bg {
-              width: 80%;
+              width: 100%;
+              height: 300px;
             }
             .features-list {
-              padding: 40px 20px;
-              margin-top: 0px;
-              margin-left: -200px;
+              padding: 20px 0px;
+              margin: 0;
               background: rgba(white, 0.95);
               .item {
                 width: 100%;
+                padding: 10px 0;
               }
             }
           }

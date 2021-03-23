@@ -13,6 +13,10 @@ body {
   letter-spacing: 1px;
   color: $text-primary;
   font-weight: 300;
+  overflow-x: hidden;
+}
+.wow {
+  visibility: hidden;
 }
 * {
   box-sizing: border-box;
