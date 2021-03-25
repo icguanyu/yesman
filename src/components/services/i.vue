@@ -47,7 +47,7 @@
 <script>
   import Others from "@/components/services/others";
   export default {
-    name: "service-g",
+    name: "service-i",
     components: { Others },
     data() {
       return {};

@@ -191,31 +191,31 @@
     }
   }
   #s_0 {
-    background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3215916/268317_729865.jpeg");
+    background-image: url("../assets/images/service_thumbs/1.jpg");
   }
   #s_1 {
-    background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3215916/808904_447727.jpeg");
+    background-image: url("../assets/images/service_thumbs/2.jpg");
   }
   #s_2 {
-    background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3215916/226472_960277.jpeg");
+    background-image: url("../assets/images/service_thumbs/3.jpg");
   }
   #s_3 {
-    background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3215916/613188_728398.jpeg");
+    background-image: url("../assets/images/service_thumbs/4.jpg");
   }
   #s_4 {
-    background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3215916/35722_503054.jpeg");
+    background-image: url("../assets/images/service_thumbs/5.jpg");
   }
   #s_5 {
-    background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3215916/808904_447727.jpeg");
+    background-image: url("../assets/images/service_thumbs/6.jpg");
   }
   #s_6 {
-    background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3215916/226472_960277.jpeg");
+    background-image: url("../assets/images/service_thumbs/7.jpg");
   }
   #s_7 {
-    background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3215916/613188_728398.jpeg");
+    background-image: url("https://fakeimg.pl/440x320/282828/eae0d0/?retina=1");
   }
   #s_8 {
-    background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3215916/35722_503054.jpeg");
+    background-image: url("https://fakeimg.pl/440x320/282828/eae0d0/?retina=1");
   }
   @keyframes marquee {
     0% {

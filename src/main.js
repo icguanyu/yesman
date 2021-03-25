@@ -29,6 +29,9 @@ AOS.init({
 });
 Vue.use(AOS);
 
+// global components
+import ServiceCoolLightBox from "@/components/ServiceCoolLightBox";
+Vue.component("ServiceCoolLightBox", ServiceCoolLightBox);
 
 new Vue({
   router,

@@ -1,15 +1,15 @@
 <template>
   <div class="social-links">
-    <a href="#">
+    <a href="https://www.facebook.com/YesManphotographyStudio" target="_blabk">
       <img src="../assets/images/icons/b_fb-icon.png" alt="fb">
     </a>
-    <a href="#">
+    <a href="https://www.instagram.com/yes_man_photography/" target="_blabk">
       <img src="../assets/images/icons/b_instagram-icon.png" alt="instagram">
     </a>
-    <a href="#">
+    <a href="https://lin.ee/nScZxpE" target="_blabk">
       <img src="../assets/images/icons/b_line-icon.png" alt="line">
     </a>
-    <a href="#">
+    <a href="https://m.facebook.com/messages/thread/113573840431146" target="_blabk">
       <img src="../assets/images/icons/b_messenger-icon.png" alt="messenger">
     </a>
   </div>

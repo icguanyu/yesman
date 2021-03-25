@@ -2,7 +2,7 @@
   <div>
     <div class="images-wrapper">
       <el-row :gutter="5">
-        <el-col :xs="12" :span="6" v-for="(image, imageIndex) in items" :key="imageIndex">
+        <el-col :xs="8" :span="6" v-for="(image, imageIndex) in items" :key="imageIndex">
           <div class="image" :style="{ backgroundImage: 'url(' + image + ')' }" @click="index = imageIndex"></div>
         </el-col>
       </el-row>

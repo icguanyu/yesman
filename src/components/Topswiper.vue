@@ -4,7 +4,8 @@
       <swiper-slide id="bg_1"></swiper-slide>
       <swiper-slide id="bg_2"></swiper-slide>
       <swiper-slide id="bg_3"></swiper-slide>
-
+      <swiper-slide id="bg_4"></swiper-slide>
+      <swiper-slide id="bg_5"></swiper-slide>
     </swiper>
     <div id="particles-js">
       <div class="title">
@@ -182,13 +183,19 @@
       }
     }
     #bg_1 {
-      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/379202_674043.jpeg");
+      background-image: url("../assets/images/others/b2.jpg");
     }
     #bg_2 {
-      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/464449_494215.jpeg");
+      background-image: url("../assets/images/others/a12.jpg");
     }
     #bg_3 {
-      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/996294_57001.jpeg");
+      background-image: url("../assets/images/others/a14.jpg");
+    }
+    #bg_4 {
+      background-image: url("../assets/images/others/b14.jpg");
+    }
+    #bg_5 {
+      background-image: url("../assets/images/others/b15.jpg");
     }
   }
   .scroll {

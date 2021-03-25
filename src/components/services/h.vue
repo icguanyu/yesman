@@ -33,7 +33,7 @@
 <script>
   import Others from "@/components/services/others";
   export default {
-    name: "service-g",
+    name: "service-h",
     components: { Others },
     data() {
       return {};
