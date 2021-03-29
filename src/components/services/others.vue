@@ -10,60 +10,94 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr v-if="filter(['a', 'b'])">
             <td>多一位大人入鏡拍攝（不含服裝造型）</td>
             <td>$500/人</td>
           </tr>
-          <tr>
-            <td>多一位大人加妝髮 </td>
+          <tr v-if="filter(['a', 'b'])">
+            <td>多一位大人加妝髮</td>
             <td>$1000/人</td>
           </tr>
-          <tr>
-            <td>多一位大人服裝租借<span>註1</span></td>
-            <td> 一套$600/人</td>
+          <tr v-if="filter(['a', 'b'])">
+            <td>多一位大人服裝租借<span>(註1)</span></td>
+            <td>一套$600/人</td>
           </tr>
-          <tr>
-            <td>多一位小朋友拍攝（含一套服裝搭配一種造型）<span>註2</span></td>
-            <td> $500/人</td>
+          <tr v-if="filter(['a', 'b'])">
+            <td>多一位小朋友拍攝（含1套服裝搭配1種造型）<span>(註2)</span></td>
+            <td>$500/人</td>
           </tr>
-          <tr>
-            <td>多一位小朋友拍攝（含兩套服裝搭配兩種造型）<span>註2</span></td>
+          <tr v-if="filter(['a', 'b'])">
+            <td>多一位小朋友拍攝（含2套服裝搭配2種造型）<span>註2</span></td>
             <td>$1000/人</td>
           </tr>
-          <tr>
-            <td>加選電子檔</td>
-            <td>$500/張</td>
+          <tr v-if="filter(['e', 'f', 'g', 'h', 'i'])">
+            <td>彌月卡（50/100張）</td>
+            <td>$500/$700</td>
           </tr>
-          <tr>
-            <td>加選入相本+電子檔</td>
-            <td>$700/張</td>
+          <tr v-if="filter(['e', 'f', 'g', 'h', 'i'])">
+            <td>多一位大人入鏡拍攝（不含服裝造型）</td>
+            <td>$500/人</td>
           </tr>
-          <div class="others-notes">
-            註1:服裝僅提供黑色西裝以及禮服<br>
-            註2:小朋友年齡限制為0-11歲，滿12(含)歲以上算大人<br>
-            <p style="color:red;font-size: 18px;margin:10px 0;">拍攝成品需自取，如需郵寄宅配到府貨，需自行負擔郵費</p>
-          </div>
         </tbody>
       </table>
+      <div class="others-notes">
+        <li>註1:服裝僅提供黑色西裝以及禮服</li>
+        <li>註2:小朋友年齡限制為0-11歲，滿12(含)歲以上算大人</li>
+        <p style="color: red; font-size: 18px; margin: 10px 0">
+          拍攝成品需自取，如需郵寄宅配到府貨，需自行負擔郵費
+        </p>
+      </div>
     </div>
     <el-collapse v-model="activeCollapse">
-      <el-collapse-item name="1">
+      <el-collapse-item name="0" v-if="filter(['c', 'd', 'e', 'f', 'g', 'h', 'i'])">
         <template slot="title">
-          <div class="collspse-title"> 拍攝注意事項<i class="header-icon el-icon-info"></i></div>
+          <div class="collspse-title">
+            <i class="header-icon el-icon-info"></i>到府拍攝注意事項
+          </div>
         </template>
         <div class="content">
           <ol>
-            <li>大人若是入鏡拍攝，需自備一套服裝，和小朋友其中一套服裝做拍攝，如需和小朋友兩套服裝做拍攝，需加價一套$500/人。</li>
-            <li>本公司全程禁止側拍側錄。</li>
-            <li>拍攝完成後隔一週後可預約時間挑選照片，挑選照片需到工作室挑選，時段為晚上18:00及19:30兩種時段，於拍攝完成後預約時間。</li>
+            <li>
+              大人若需入鏡拍攝，需自備一套服裝，和小朋友其中一套服裝做拍攝，如需和小朋友兩套服裝做拍攝，需加價一套$500/人。
+            </li>
             <li>訂單贈品如遇不可抗力因素缺貨，本公司將以等值商品替代。</li>
-            <li>本公司全館禁止攜帶寵物，如要攜帶寵物，請放置於外出籠/包裡，不可落地。</li>
+            <li>
+              拍攝完成後，修片時間需<b>三</b>週，如需製作彌月卡，請事先挑選一張照片製作。
+            </li>
+            <li>
+              修片完成會以「雲端方式」先行選產品，挑選<b>30</b>張照片入本；再挑選<b>1</b>張做成相框(橫豎不限)。以上照片挑選都必須提供編號給我們，避免挑選錯誤。
+            </li>
+            <li>注意！<b>照片挑選完畢後將「不再校稿」直接製作產品。</b></li>
           </ol>
         </div>
       </el-collapse-item>
-      <el-collapse-item name="2">
+      <el-collapse-item name="1" v-if="filter(['a', 'b'])">
         <template slot="title">
-          <div class="collspse-title">貼心提醒<i class="header-icon el-icon-info"></i></div>
+          <div class="collspse-title">
+            <i class="header-icon el-icon-info"></i>到棚拍攝注意事項
+          </div>
+        </template>
+        <div class="content">
+          <ol>
+            <li>
+              大人若是入鏡拍攝，需自備一套服裝，和小朋友其中一套服裝做拍攝，如需和小朋友兩套服裝做拍攝，需加價一套$500/人。
+            </li>
+            <li>本公司全程<b>禁止側拍側錄</b>。</li>
+            <li>
+              拍攝完成後隔一週後可預約時間挑選照片，挑選照片需到工作室挑選，時段為晚上18:00及19:30兩種時段，於拍攝完成後預約時間。
+            </li>
+            <li>訂單贈品如遇不可抗力因素缺貨，本公司將以等值商品替代。</li>
+            <li>
+              本公司全館<b>禁止攜帶寵物</b>，如要攜帶寵物，請放置於外出籠/包裡，不可落地。
+            </li>
+          </ol>
+        </div>
+      </el-collapse-item>
+      <el-collapse-item name="2" v-if="filter(['a', 'b', 'c', 'd'])">
+        <template slot="title">
+          <div class="collspse-title">
+            <i class="header-icon el-icon-info"></i>貼心提醒
+          </div>
         </template>
         <div class="content">
           <ol>
@@ -71,7 +105,25 @@
             <li>如果小朋友生病不舒服，請主動告知並延期拍攝。</li>
             <li>小朋友重要物品一定要記得攜帶，例如：尿布、奶嘴、奶瓶等。</li>
             <li>可攜帶小朋友熟悉的物品或玩具，準備零食。</li>
-            <li>如想穿自己的便服可以自備，選擇工作室提供之服裝或自備服裝，總共拍攝兩套。</li>
+            <li>
+              如想穿自己的便服可以自備，選擇工作室提供之服裝或自備服裝，總共拍攝兩套。
+            </li>
+            <li>小朋友身上不要有任何紋身貼紙、蓋章等記號。</li>
+            <li>帶具有代表性或特殊意義的玩偶、物品等一同入鏡。</li>
+          </ol>
+        </div>
+      </el-collapse-item>
+      <el-collapse-item name="3" v-if="filter(['e', 'f', 'g', 'h', 'i'])">
+        <template slot="title">
+          <div class="collspse-title">
+            <i class="header-icon el-icon-info"></i>新生兒方案貼心提醒
+          </div>
+        </template>
+        <div class="content">
+          <ol>
+            <li>拍攝當日請讓小朋友吃飽睡飽才有精神拍照。</li>
+            <li>如果小朋友生病不舒服，請主動告知並延期拍攝。</li>
+            <li>小朋友重要物品一定要記得攜帶，例如：尿布、奶嘴、奶瓶等。</li>
             <li>小朋友身上不要有任何紋身貼紙、蓋章等記號。</li>
             <li>帶具有代表性或特殊意義的玩偶、物品等一同入鏡。</li>
           </ol>
@@ -86,8 +138,20 @@
     name: "services-others",
     data() {
       return {
-        activeCollapse: ["1", "2", "3"],
+        activeCollapse: ["0", "1", "2", "3"],
+        id: this.$route.query.s,
       };
+    },
+    watch: {
+      $route(to) {
+        console.log("to", to.query.s);
+        this.id = to.query.s;
+      },
+    },
+    methods: {
+      filter(ary) {
+        return !ary.includes(this.id);
+      },
     },
   };
 </script>
@@ -123,9 +187,17 @@
       }
     }
     .others-notes {
+      display: block;
+      width: 100%;
       font-size: 13px;
       line-height: 16px;
       padding: 8px;
+      p {
+        line-height: 20px;
+        color: red;
+        font-size: 18px;
+        margin: 10px 0;
+      }
     }
   }
   .collspse-title {
@@ -179,6 +251,9 @@
           line-height: 20px;
           &:last-child {
             margin-bottom: 0;
+          }
+          b {
+            color: rgb(243, 81, 81);
           }
         }
       }

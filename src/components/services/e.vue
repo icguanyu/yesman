@@ -7,7 +7,7 @@
         <el-card class="box-card" shadow="hover">
           <div class="service_intro">
             <ol>
-              <li>限定<b>兩個月至兩歲</b>小朋友</li>
+              <li>限定<b>兩歲至十二歲</b>小朋友</li>
               <li><b>1</b>位小朋友<b>2</b>套服裝</li>
               <li><b>2</b>位大人入鏡（不含服裝造型）</li>
             </ol>
@@ -21,7 +21,7 @@
             <ol>
               <li>精修照片10張</li>
               <li>同檔案電子檔10張 </li>
-              <li>6x8 水晶相本一本</li>
+              <li>6x8 精裝相本一本</li>
               <li>同檔案10張入相本</li>
               <li>16G 木質USB *1</li>
               <li>8x10相框一個（同檔案製作）*1</li>
@@ -30,7 +30,7 @@
         </el-card>
       </el-col>
       <el-col :xs="24" :md="12">
-        <el-divider content-position="left">好禮三選二</el-divider>
+        <el-divider content-position="left">好禮三選一</el-divider>
         <el-card class="box-card" shadow="hover">
           <div class="servie_bonuse">
             <ol>

@@ -32,7 +32,7 @@
         </el-card>
       </el-col>
       <el-col :xs="24" :md="12">
-        <el-divider content-position="left">好禮三選二</el-divider>
+        <el-divider content-position="left">好禮三選一</el-divider>
         <el-card class="box-card" shadow="hover">
           <div class="servie_bonuse">
             <ol>
