@@ -6,7 +6,7 @@ module.exports = {
       entry: "src/main.js",
       template: "public/index.html",
       filename: "index.html",
-      title: "YESMAN Photography Studio",
+      title: "Yes Man 專業攝影工作室",
     },
   },
   css: {

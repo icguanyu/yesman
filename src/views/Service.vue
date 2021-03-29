@@ -78,47 +78,47 @@
         services: [
           {
             title: "新生兒寫真到「府」拍攝",
-            desc: "",
+            desc: "三個願望一次滿足：全檔、影片、８套造型",
             price: "NT$8,800元",
           },
           {
             title: "新生兒寫真到棚拍攝-A",
-            desc: "",
+            desc: "輕鬆在家擁有攝影棚。",
             price: "NT$6,000元",
           },
           {
             title: "新生兒寫真到棚拍攝-B",
-            desc: "",
+            desc: "獨享40坪攝影棚。",
             price: "NT$5,000元",
           },
           {
             title: "新生兒寫真到棚拍攝-C",
-            desc: "",
+            desc: "出生的好禮物",
             price: "NT$3,880元",
           },
           {
             title: "兒童寫真到棚拍攝-A",
-            desc: "",
+            desc: "超值好禮三選一",
             price: "NT$5,000元",
           },
           {
             title: "兒童寫真到棚拍攝-B",
-            desc: "",
+            desc: "超值體驗價",
             price: "NT$3,800元",
           },
           {
             title: "孕婦到棚拍攝",
-            desc: "",
+            desc: "拍出最美的一刻",
             price: "NT$6,800元",
           },
           {
             title: "韓式證件照",
-            desc: "",
+            desc: "提高面試的機會",
             price: "NT$280起",
           },
           {
             title: "形象照",
-            desc: "",
+            desc: "專業的態度等於高檔的收入",
             price: "NT$2,400起",
           },
         ],

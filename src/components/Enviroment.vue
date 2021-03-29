@@ -8,10 +8,11 @@
       </div>
       <div class="body">
         <article class="desc" data-aos="fade-down">
-          <b>環境介紹的文案</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae maiores cumque
-          eligendi voluptates
-          voluptatum ab unde aperiam incidunt ratione similique odit perspiciatis excepturi quos quo placeat, veniam
-          repudiandae sint?
+          解決爸爸停車困擾，門口可以停車！<br>
+          解決媽咪的擔心，我們擁有完整逗小孩的方式．拍出媽咪喜愛的照片。<br>
+          解決小孩拒拍的心情，專業的攝影師會犧牲色相討小孩歡心。<br>
+          一個時段一棚的舒適環境，不會受到顧客的影響，舒適居家的感覺讓拍攝心情放鬆。
+
         </article>
         <div class="features">
           <div class="features-bg" data-aos="fade-right"></div>
@@ -19,9 +20,9 @@
             <div class="item"><span class="index">01</span>工作室位於新莊區</div>
             <div class="item"><span class="index">02</span>四十坪立體攝影棚</div>
             <div class="item"><span class="index">03</span>舒適無壓的拍攝環境</div>
-            <div class="item"><span class="index">04</span>更多環境特色</div>
-            <div class="item"><span class="index">05</span>更多環境特色</div>
-            <div class="item"><span class="index">06</span>更多環境特色</div>
+            <div class="item"><span class="index">04</span>專業保母證照</div>
+            <div class="item"><span class="index">05</span>哺乳空間、尿布台、熱水器</div>
+            <div class="item"><span class="index">06</span>大人、小孩服裝齊全</div>
           </div>
         </div>
 
