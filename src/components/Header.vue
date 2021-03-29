@@ -21,16 +21,16 @@
           <a @click="push('works')">作品</a>
           <a @click="push('env')">環境</a>
           <a @click="push('service')">方案</a>
-          <a href="#">
+          <a href="https://www.facebook.com/YesManphotographyStudio" target="_blank">
             <box-icon type='logo' name='facebook-circle'></box-icon>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/yes_man_photography/" target="_blank">
             <box-icon name='instagram' type='logo'></box-icon>
           </a>
-          <a href="#">
+          <a href="https://m.facebook.com/messages/thread/113573840431146" target="_blank">
             <box-icon name='message-rounded-detail' type='solid'></box-icon>
           </a>
-          <a href="#">LINE</a>
+          <a href="https://lin.ee/nScZxpE" target="_blank">LINE</a>
 
         </div>
       </div>
