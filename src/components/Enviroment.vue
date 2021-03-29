@@ -76,7 +76,7 @@
 
 <style lang="scss" scoped>
   .swiper-container {
-    --swiper-pagination-color: #3f3f3f; 
+    --swiper-pagination-color: #3f3f3f;
   }
   .container {
     padding-top: 100px;
@@ -117,9 +117,9 @@
           .swiper {
             width: 70%;
             flex-shrink: 0;
-            height: 480px;
+            height: 520px;
             .swiper-slide {
-              height: 480px;
+              height: 520px;
               background-size: cover;
               background-position: center center;
               background-repeat: no-repeat;
@@ -188,7 +188,10 @@
             flex-direction: column-reverse;
             .swiper {
               width: 100%;
-              height: 400px;
+              height: 260px;
+              .swiper-slide {
+                height: 260px;
+              }
             }
             .features-list {
               padding: 20px 0px;
