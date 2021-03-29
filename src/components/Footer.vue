@@ -6,9 +6,15 @@
           <h1>YESMAN</h1>
           <p>- Photography Studio -</p>
         </div>
-        <p>新北市新莊區五工三路86巷10號1樓</p>
-        <p>ADVERTISING & MARKETING</p>
+        <p>新北市新莊區五工三路86巷10號1樓 <a href="https://goo.gl/maps/n64aA8WqSzA77S5i7" target="_blank"
+            style="vertical-align: middle;">
+            <box-icon name='map' color="#d86060" type='solid'></box-icon>
+          </a></p>
+        <p>平日 早上10:00-18:30</p>
+        <p>假日 早上10:00-21:00</p>
+        <p>每周二公休</p>
         <p>TEL. (02) 2298-8017 /MAIL. example@gmail.com</p>
+
       </div>
     </div>
 

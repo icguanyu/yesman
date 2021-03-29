@@ -130,6 +130,19 @@
         </div>
       </el-collapse-item>
     </el-collapse>
+    <div class="contact">
+      <el-divider content-position="left">馬上聯絡我們</el-divider>
+      <el-row :gutter="10">
+        <el-col :xs="24" :span="8"> <a class="el-button el-button--primary" style="color:#fff"
+            href="https://www.facebook.com/YesManphotographyStudio" target="_blank">Facebook 私訊</a></el-col>
+        <el-col :xs="24" :span="8"> <a class="el-button el-button--success" style="color:#fff"
+            href="https://lin.ee/nScZxpE" target="_blank">+LINE好友</a></el-col>
+        <el-col :xs="24" :span="8"> <a class="el-button" href="tel:02-22988017"><i class="el-icon-phone"></i>
+            02-22988017</a>
+        </el-col>
+      </el-row>
+
+    </div>
   </div>
 </template>
 
@@ -198,6 +211,13 @@
         font-size: 18px;
         margin: 10px 0;
       }
+    }
+  }
+  .contact {
+    a {
+      margin-bottom: 5px;
+      display: block;
+      width: 100%;
     }
   }
   .collspse-title {

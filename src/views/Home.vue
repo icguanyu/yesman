@@ -2,12 +2,12 @@
   <div class="main">
 
     <TopSwiper />
-    <About />
+
     <Works />
     <!-- <PhotoGrid /> -->
     <Env />
     <Service />
-
+    <About />
   </div>
 </template>
 

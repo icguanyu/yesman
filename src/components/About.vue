@@ -32,8 +32,7 @@
     padding: 30px 0;
     background: #f8f8f8;
     .content {
-      height: 560px;
-      padding: 60px 0;
+     
       .head {
         .title {
           font-size: 4rem;
