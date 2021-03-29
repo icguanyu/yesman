@@ -5,38 +5,38 @@
       <table>
         <thead>
           <tr>
-            <td>項目</td>
             <td>價格</td>
+            <td>項目</td>
           </tr>
         </thead>
         <tbody>
           <tr v-if="filter(['a', 'b'])">
-            <td>多一位大人入鏡拍攝（不含服裝造型）</td>
             <td>$500/人</td>
+            <td>多一位大人入鏡拍攝（不含服裝造型）</td>
           </tr>
           <tr v-if="filter(['a', 'b'])">
+            <td>$1000/人</td>
             <td>多一位大人加妝髮</td>
-            <td>$1000/人</td>
           </tr>
           <tr v-if="filter(['a', 'b'])">
-            <td>多一位大人服裝租借<span>(註1)</span></td>
             <td>一套$600/人</td>
+            <td>多一位大人服裝租借<span>(註1)</span></td>
           </tr>
           <tr v-if="filter(['a', 'b'])">
+            <td>$500/人</td>
             <td>多一位小朋友拍攝（含1套服裝搭配1種造型）<span>(註2)</span></td>
-            <td>$500/人</td>
           </tr>
           <tr v-if="filter(['a', 'b'])">
-            <td>多一位小朋友拍攝（含2套服裝搭配2種造型）<span>註2</span></td>
             <td>$1000/人</td>
+            <td>多一位小朋友拍攝（含2套服裝搭配2種造型）<span>註2</span></td>
           </tr>
           <tr v-if="filter(['e', 'f', 'g', 'h', 'i'])">
-            <td>彌月卡（50/100張）</td>
             <td>$500/$700</td>
+            <td>彌月卡（50/100張）</td>
           </tr>
           <tr v-if="filter(['e', 'f', 'g', 'h', 'i'])">
-            <td>多一位大人入鏡拍攝（不含服裝造型）</td>
             <td>$500/人</td>
+            <td>多一位大人入鏡拍攝（不含服裝造型）</td>
           </tr>
         </tbody>
       </table>
