@@ -15,7 +15,16 @@
 
         </article>
         <div class="features">
-          <div class="features-bg" data-aos="fade-right"></div>
+          <!-- <div class="features-bg" data-aos="fade-right"> </div> -->
+          <swiper class="swiper" :options="swiperOptions">
+            <swiper-slide id="bg_1"></swiper-slide>
+            <swiper-slide id="bg_2"></swiper-slide>
+            <swiper-slide id="bg_3"></swiper-slide>
+            <swiper-slide id="bg_4"></swiper-slide>
+            <swiper-slide id="bg_5"></swiper-slide>
+            <div class="swiper-pagination" slot="pagination"></div>
+          </swiper>
+
           <div class="features-list" data-aos="fade-left">
             <div class="item"><span class="index">01</span>工作室位於新莊區</div>
             <div class="item"><span class="index">02</span>四十坪立體攝影棚</div>
@@ -33,12 +42,42 @@
   </div>
 </template>
 <script>
+  import "swiper/swiper-bundle.css";
+  import { Swiper, SwiperSlide } from "vue-awesome-swiper";
   export default {
     name: "enviroment",
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    data() {
+      return {
+        swiperOptions: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop: true,
+          effect: "fade",
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          fadeEffect: {
+            crossFade: true,
+          },
+          autoplay: {
+            delay: 5000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+          },
+        },
+      };
+    },
   };
 </script>
 
 <style lang="scss" scoped>
+  .swiper-container {
+    --swiper-pagination-color: #3f3f3f; 
+  }
   .container {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -68,12 +107,38 @@
         .features {
           display: flex;
           align-items: center;
-          .features-bg {
+          // .features-bg {
+          //   width: 70%;
+          //   flex-shrink: 0;
+          //   height: 480px;
+          //   background-size: cover;
+          //   background-image: url("https://images.unsplash.com/photo-1615458509633-f15b61bdacb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+          // }
+          .swiper {
             width: 70%;
             flex-shrink: 0;
             height: 480px;
-            background-size: cover;
-            background-image: url("https://images.unsplash.com/photo-1615458509633-f15b61bdacb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+            .swiper-slide {
+              height: 480px;
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+            #bg_1 {
+              background-image: url("../assets/images/env/1.jpg");
+            }
+            #bg_2 {
+              background-image: url("../assets/images/env/2.jpg");
+            }
+            #bg_3 {
+              background-image: url("../assets/images/env/3.jpg");
+            }
+            #bg_4 {
+              background-image: url("../assets/images/env/4.jpg");
+            }
+            #bg_5 {
+              background-image: url("../assets/images/env/5.jpg");
+            }
           }
           .features-list {
             padding: 40px;
@@ -83,6 +148,7 @@
             display: flex;
             flex-wrap: wrap;
             box-sizing: border-box;
+            z-index: 1;
             .item {
               width: 50%;
               padding: 20px;
@@ -120,9 +186,9 @@
           }
           .features {
             flex-direction: column-reverse;
-            .features-bg {
+            .swiper {
               width: 100%;
-              height: 300px;
+              height: 400px;
             }
             .features-list {
               padding: 20px 0px;

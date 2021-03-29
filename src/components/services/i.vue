@@ -4,7 +4,6 @@
 
     <el-row :gutter="20">
       <el-col :span="24">
-        
         <el-card class="box-card" shadow="hover">
           <div class="service_intro">
             <ol>
@@ -25,7 +24,6 @@
               <li>精修照片三張</li>
             </ol>
           </div>
-
         </el-card>
       </el-col>
       <el-col :xs="24" :md="12">
@@ -40,6 +38,7 @@
         </el-card>
       </el-col>
     </el-row>
+    <ServiceCoolLightBox :items="items" />
     <Others />
   </div>
 </template>
@@ -50,7 +49,15 @@
     name: "service-i",
     components: { Others },
     data() {
-      return {};
+      return {
+        items: [],
+      };
+    },
+    mounted() {
+      let r = require.context("@/assets/images/形象照", true, /\.jpg$/);
+      var imgs = [];
+      r.keys().forEach((key, idx) => (imgs[idx] = r(key)));
+      this.items = imgs;
     },
   };
 </script>

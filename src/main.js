@@ -13,8 +13,8 @@ Vue.use(ElementUI);
 vue-awesome-swiper
 https://github.com/surmon-china/vue-awesome-swiper
 */
-import Swiper, { Autoplay, EffectFade, Navigation } from "swiper";
-Swiper.use([Autoplay, EffectFade, Navigation]);
+import Swiper, { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
+Swiper.use([Autoplay, EffectFade, Navigation, Pagination]);
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles

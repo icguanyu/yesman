@@ -6,6 +6,11 @@
       <swiper-slide id="bg_3"></swiper-slide>
       <swiper-slide id="bg_4"></swiper-slide>
       <swiper-slide id="bg_5"></swiper-slide>
+      <swiper-slide id="bg_6"></swiper-slide>
+      <swiper-slide id="bg_7"></swiper-slide>
+      <swiper-slide id="bg_8"></swiper-slide>
+      <swiper-slide id="bg_9"></swiper-slide>
+      <swiper-slide id="bg_10"></swiper-slide>
     </swiper>
     <div id="particles-js">
       <div class="title">
@@ -45,7 +50,7 @@
             crossFade: true,
           },
           autoplay: {
-            delay: 6000,
+            delay: 5000,
             stopOnLastSlide: false,
             disableOnInteraction: false,
           },
@@ -183,19 +188,34 @@
       }
     }
     #bg_1 {
-      background-image: url("../assets/images/others/b2.jpg");
+      background-image: url("../assets/images/slide/1.jpg");
     }
     #bg_2 {
-      background-image: url("../assets/images/others/a12.jpg");
+      background-image: url("../assets/images/slide/2.jpg");
     }
     #bg_3 {
-      background-image: url("../assets/images/others/a14.jpg");
+      background-image: url("../assets/images/slide/3.jpg");
     }
     #bg_4 {
-      background-image: url("../assets/images/others/b14.jpg");
+      background-image: url("../assets/images/slide/4.jpg");
     }
     #bg_5 {
-      background-image: url("../assets/images/others/b15.jpg");
+      background-image: url("../assets/images/slide/5.jpg");
+    }
+    #bg_6 {
+      background-image: url("../assets/images/slide/6.jpg");
+    }
+    #bg_7 {
+      background-image: url("../assets/images/slide/7.jpg");
+    }
+    #bg_8 {
+      background-image: url("../assets/images/slide/8.jpg");
+    }
+    #bg_9 {
+      background-image: url("../assets/images/slide/9.jpg");
+    }
+    #bg_10 {
+      background-image: url("../assets/images/slide/10.jpg");
     }
   }
   .scroll {
