@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div id="fb-root"></div>
     <Header />
     <Social />
     <router-view />

@@ -1,8 +1,6 @@
 <template>
   <div class="main">
-    <div id="fb-root"></div>
     <TopSwiper />
-
     <Works />
     <!-- <PhotoGrid /> -->
     <Env />
