@@ -8,9 +8,6 @@
       <swiper-slide id="bg_5"></swiper-slide>
       <swiper-slide id="bg_6"></swiper-slide>
       <swiper-slide id="bg_7"></swiper-slide>
-      <swiper-slide id="bg_8"></swiper-slide>
-      <swiper-slide id="bg_9"></swiper-slide>
-      <swiper-slide id="bg_10"></swiper-slide>
     </swiper>
     <div id="particles-js">
       <div class="title">
@@ -207,15 +204,6 @@
     }
     #bg_7 {
       background-image: url("../assets/images/slide/7.jpg");
-    }
-    #bg_8 {
-      background-image: url("../assets/images/slide/8.jpg");
-    }
-    #bg_9 {
-      background-image: url("../assets/images/slide/9.jpg");
-    }
-    #bg_10 {
-      background-image: url("../assets/images/slide/10.jpg");
     }
   }
   .scroll {

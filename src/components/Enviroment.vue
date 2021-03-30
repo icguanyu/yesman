@@ -22,6 +22,7 @@
             <swiper-slide id="bg_3"></swiper-slide>
             <swiper-slide id="bg_4"></swiper-slide>
             <swiper-slide id="bg_5"></swiper-slide>
+            <swiper-slide id="bg_6"></swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
           </swiper>
 
@@ -138,6 +139,9 @@
             }
             #bg_5 {
               background-image: url("../assets/images/env/5.jpg");
+            }
+            #bg_6 {
+              background-image: url("../assets/images/env/6.jpg");
             }
           }
           .features-list {
