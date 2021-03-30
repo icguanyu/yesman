@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="title">新生兒寫真到棚拍攝 - <span>NT$3,880元</span></div>
+    <div class="title">新生兒寫真到「棚」拍攝 - <span>NT$3,880元</span></div>
 
     <el-row :gutter="20">
       <el-col :span="24">

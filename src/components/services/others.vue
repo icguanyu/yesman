@@ -1,65 +1,66 @@
 <template>
   <div>
-    <el-divider content-position="left">其他加購項目</el-divider>
-    <div class="others">
-      <table>
-        <thead>
-          <tr>
-            <td>價格</td>
-            <td>項目</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-if="filter(['a', 'b'])">
-            <td>$500/人</td>
-            <td>多一位大人入鏡拍攝（不含服裝造型）</td>
-          </tr>
-          <tr v-if="filter(['a', 'b'])">
-            <td>$1000/人</td>
-            <td>多一位大人加妝髮</td>
-          </tr>
-          <tr v-if="filter(['a', 'b'])">
-            <td>一套$600/人</td>
-            <td>多一位大人服裝租借<span>(註1)</span></td>
-          </tr>
-          <tr v-if="filter(['a', 'b'])">
-            <td>$500/人</td>
-            <td>多一位小朋友拍攝（含1套服裝搭配1種造型）<span>(註2)</span></td>
-          </tr>
-          <tr v-if="filter(['a', 'b'])">
-            <td>$1000/人</td>
-            <td>多一位小朋友拍攝（含2套服裝搭配2種造型）<span>註2</span></td>
-          </tr>
-          <tr v-if="filter(['e', 'f', 'g', 'h', 'i'])">
-            <td>$500/$700</td>
-            <td>彌月卡（50/100張）</td>
-          </tr>
-          <tr v-if="filter(['e', 'f', 'g', 'h', 'i'])">
-            <td>$500/人</td>
-            <td>多一位大人入鏡拍攝（不含服裝造型）</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="others-notes">
-        <li>註1:服裝僅提供黑色西裝以及禮服</li>
-        <li>註2:小朋友年齡限制為0-11歲，滿12(含)歲以上算大人</li>
-        <p style="color: red; font-size: 18px; margin: 10px 0">
-          拍攝成品需自取，如需郵寄宅配到府貨，需自行負擔郵費
-        </p>
+    <!--其他加購-->
+    <div v-if="filter(['h'])">
+      <el-divider content-position="left">其他加購項目</el-divider>
+      <div class="others">
+        <table v-if="filter(['h'])">
+          <thead>
+            <tr>
+              <td>價格</td>
+              <td>項目</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-if="filter(['a', 'b'])">
+              <td>$500/人</td>
+              <td>多一位大人入鏡拍攝（不含服裝造型）</td>
+            </tr>
+            <tr v-if="filter(['a', 'b'])">
+              <td>$1000/人</td>
+              <td>多一位大人加妝髮</td>
+            </tr>
+            <tr v-if="filter(['a', 'b'])">
+              <td>一套$600/人</td>
+              <td>多一位大人服裝租借<span>(註1)</span></td>
+            </tr>
+            <tr v-if="filter(['a', 'b'])">
+              <td>$500/人</td>
+              <td>多一位小朋友拍攝（含1套服裝搭配1種造型）<span>(註2)</span></td>
+            </tr>
+            <tr v-if="filter(['a', 'b'])">
+              <td>$1000/人</td>
+              <td>多一位小朋友拍攝（含2套服裝搭配2種造型）<span>註2</span></td>
+            </tr>
+            <tr v-if="filter(['e', 'f', 'g', 'h', 'i'])">
+              <td>$500/$800</td>
+              <td>彌月卡（50/100張）</td>
+            </tr>
+            <tr v-if="filter(['e', 'f', 'g', 'h', 'i'])">
+              <td>$500/人</td>
+              <td>多一位大人入鏡拍攝（不含服裝造型）</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="others-notes">
+          <li>註1:服裝僅提供黑色西裝以及禮服</li>
+          <li>註2:小朋友年齡限制為0-11歲，滿12(含)歲以上算大人</li>
+          <p style="color: red; font-size: 18px; margin: 10px 0">
+            拍攝成品需自取，如需郵寄宅配到府貨，需自行負擔郵費
+          </p>
+        </div>
       </div>
     </div>
+    <!--拍攝注意事項-->
     <el-collapse v-model="activeCollapse">
       <el-collapse-item name="0" v-if="filter(['c', 'd', 'e', 'f', 'g', 'h', 'i'])">
         <template slot="title">
           <div class="collspse-title">
-            <i class="header-icon el-icon-info"></i>到府拍攝注意事項
+            <i class="header-icon el-icon-info"></i>拍攝注意事項
           </div>
         </template>
         <div class="content">
           <ol>
-            <li>
-              大人若需入鏡拍攝，需自備一套服裝，和小朋友其中一套服裝做拍攝，如需和小朋友兩套服裝做拍攝，需加價一套$500/人。
-            </li>
             <li>訂單贈品如遇不可抗力因素缺貨，本公司將以等值商品替代。</li>
             <li>
               拍攝完成後，修片時間需<b>三</b>週，如需製作彌月卡，請事先挑選一張照片製作。
@@ -71,7 +72,7 @@
           </ol>
         </div>
       </el-collapse-item>
-      <el-collapse-item name="1" v-if="filter(['a', 'b'])">
+      <el-collapse-item name="1" v-if="filter(['a', 'b','h'])">
         <template slot="title">
           <div class="collspse-title">
             <i class="header-icon el-icon-info"></i>到棚拍攝注意事項
@@ -103,7 +104,6 @@
           <ol>
             <li>拍攝當日請讓小朋友吃飽睡飽才有精神拍照。</li>
             <li>如果小朋友生病不舒服，請主動告知並延期拍攝。</li>
-            <li>小朋友重要物品一定要記得攜帶，例如：尿布、奶嘴、奶瓶等。</li>
             <li>可攜帶小朋友熟悉的物品或玩具，準備零食。</li>
             <li>
               如想穿自己的便服可以自備，選擇工作室提供之服裝或自備服裝，總共拍攝兩套。

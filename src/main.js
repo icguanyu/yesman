@@ -33,6 +33,12 @@ Vue.use(AOS);
 import ServiceCoolLightBox from "@/components/ServiceCoolLightBox";
 Vue.component("ServiceCoolLightBox", ServiceCoolLightBox);
 
+import VueFbCustomerChat from "vue-fb-customer-chat";
+Vue.use(VueFbCustomerChat, {
+  page_id: "113573840431146", //  change 'null' to your Facebook Page ID,
+  locale: "zh_TW", // default 'en_US'
+});
+
 new Vue({
   router,
   render: (h) => h(App),

@@ -27,9 +27,6 @@
           <a href="https://www.instagram.com/yes_man_photography/" target="_blank">
             <box-icon name='instagram' type='logo'></box-icon>
           </a>
-          <a href="https://m.facebook.com/messages/thread/113573840431146" target="_blank">
-            <box-icon name='message-rounded-detail' type='solid'></box-icon>
-          </a>
           <a href="https://lin.ee/nScZxpE" target="_blank">LINE</a>
 
         </div>

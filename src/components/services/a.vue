@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="title">新生兒寫真到府拍攝 - <span>NT$8,800元</span></div>
+    <div class="title">新生兒寫真到「府」拍攝 - <span>NT$8,800元</span></div>
 
     <el-row :gutter="20">
       <el-col :span="24">
@@ -24,10 +24,10 @@
             <ol>
               <li>精修照片全檔案（70張以上）</li>
               <li>同檔案電子檔全檔案</li>
-              <li>6x8 水晶相本一本</li>
+              <li>6x8 精裝相本一本</li>
               <li>自選其中30張入相本</li>
               <li>16G 木質USB *1</li>
-              <li>8*10相框 *1（同檔案製作）</li>
+              <li>8x10相框 x1（同檔案製作）</li>
               <li>30秒側錄影片</li>
             </ol>
           </div>

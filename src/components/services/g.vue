@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="title">孕婦到棚拍攝 - <span>NT$6,800元</span></div>
+    <div class="title">孕婦到棚「棚」攝 - <span>NT$6,800元</span></div>
 
     <el-row :gutter="20">
       <el-col :span="24">
@@ -22,7 +22,7 @@
             <ol>
               <li>精修照片10張</li>
               <li>同檔案電子檔10張 </li>
-              <li>6x8 水晶相本一本</li>
+              <li>6x8 精裝相本一本</li>
               <li>同檔案10張入相本</li>
               <li>16G 木質USB *1</li>
               <li>8x10相框*1（同檔案製作）</li>

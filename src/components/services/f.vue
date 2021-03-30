@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="title">兒童寫真到棚拍攝 - <span>NT$3,880元</span></div>
+    <div class="title">兒童寫真到「棚」拍攝 - <span>NT$3,880元</span></div>
 
     <el-row :gutter="20">
       <el-col :span="24">
@@ -8,7 +8,7 @@
         <el-card class="box-card" shadow="hover">
           <div class="service_intro">
             <ol>
-              <li>限定<b>兩個月至兩歲</b>小朋友</li>
+              <li>限定<b>兩個月至十二歲</b>小朋友</li>
               <li><b>1</b>位新生兒<b>2</b>套服裝搭配<b>2</b>種造型</li>
               <li><b>2</b>位大人入鏡（不含服裝造型）</li>
             </ol>

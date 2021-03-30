@@ -13,7 +13,7 @@
         <p>平日 早上10:00-18:30</p>
         <p>假日 早上10:00-21:00</p>
         <p>每周二公休</p>
-        <p>TEL. (02) 2298-8017 /MAIL. example@gmail.com</p>
+        <p>TEL. (02) 2298-8017 /MAIL. yesman8017@gmail.com</p>
 
       </div>
     </div>
@@ -87,6 +87,7 @@
   }
   @media (max-width: 768px) {
     #footer {
+      padding-bottom: 100px;
       .content {
         width: 100%;
         padding: 20px 5%;

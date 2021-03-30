@@ -14,25 +14,25 @@
         </div>
 
         <el-tabs v-model="activeName" :tabPosition='tabPosition' @tab-click="handleClick" type="card">
-          <el-tab-pane label="新生兒寫真到府拍攝-A" name="a">
+          <el-tab-pane label="新生兒寫真到「府」拍攝-A" name="a">
             <ServiceA />
           </el-tab-pane>
-          <el-tab-pane label="新生兒寫真到府拍攝-B" name="b">
+          <el-tab-pane label="新生兒寫真到「府」拍攝-B" name="b">
             <ServiceB />
           </el-tab-pane>
-          <el-tab-pane label="新生兒寫真到棚拍攝-A" name="c">
+          <el-tab-pane label="新生兒寫真到「棚」拍攝-A" name="c">
             <ServiceC />
           </el-tab-pane>
-          <el-tab-pane label="新生兒寫真到棚拍攝-B" name="d">
+          <el-tab-pane label="新生兒寫真到「棚」拍攝-B" name="d">
             <ServiceD />
           </el-tab-pane>
-          <el-tab-pane label="兒童寫真到棚拍攝-A" name="e">
+          <el-tab-pane label="兒童寫真到「棚」拍攝-A" name="e">
             <ServiceE />
           </el-tab-pane>
-          <el-tab-pane label="兒童寫真到棚拍攝-B" name="f">
+          <el-tab-pane label="兒童寫真到「棚」拍攝-B" name="f">
             <ServiceF />
           </el-tab-pane>
-          <el-tab-pane label="孕婦到棚拍攝" name="g">
+          <el-tab-pane label="孕婦到「棚」拍攝" name="g">
             <ServiceG />
           </el-tab-pane>
           <el-tab-pane label="韓式證件照" name="h">
@@ -75,53 +75,7 @@
     data() {
       return {
         activeName: "a",
-        services: [
-          {
-            title: "新生兒寫真到「府」拍攝",
-            desc: "三個願望一次滿足：全檔、影片、８套造型",
-            price: "NT$8,800元",
-          },
-          {
-            title: "新生兒寫真到棚拍攝-A",
-            desc: "輕鬆在家擁有攝影棚。",
-            price: "NT$6,000元",
-          },
-          {
-            title: "新生兒寫真到棚拍攝-B",
-            desc: "獨享40坪攝影棚。",
-            price: "NT$5,000元",
-          },
-          {
-            title: "新生兒寫真到棚拍攝-C",
-            desc: "出生的好禮物",
-            price: "NT$3,880元",
-          },
-          {
-            title: "兒童寫真到棚拍攝-A",
-            desc: "超值好禮三選一",
-            price: "NT$5,000元",
-          },
-          {
-            title: "兒童寫真到棚拍攝-B",
-            desc: "超值體驗價",
-            price: "NT$3,800元",
-          },
-          {
-            title: "孕婦到棚拍攝",
-            desc: "拍出最美的一刻",
-            price: "NT$6,800元",
-          },
-          {
-            title: "韓式證件照",
-            desc: "提高面試的機會",
-            price: "NT$280起",
-          },
-          {
-            title: "形象照",
-            desc: "專業的態度等於高檔的收入",
-            price: "NT$2,400起",
-          },
-        ],
+
         tabPosition: window.innerWidth < 768 ? "top" : "left",
       };
     },

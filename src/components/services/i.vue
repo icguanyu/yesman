@@ -26,17 +26,6 @@
           </div>
         </el-card>
       </el-col>
-      <el-col :xs="24" :md="12">
-        <el-divider content-position="left">好禮二選一</el-divider>
-        <el-card class="box-card" shadow="hover">
-          <div class="servie_bonuse">
-            <ol>
-              <li>30秒側錄影片</li>
-              <li>人像似顏繪一張（選擇一張照片）</li>
-            </ol>
-          </div>
-        </el-card>
-      </el-col>
     </el-row>
     <ServiceCoolLightBox :items="items" />
     <Others />

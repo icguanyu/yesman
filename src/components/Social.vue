@@ -9,9 +9,6 @@
     <a href="https://lin.ee/nScZxpE" target="_blank">
       <img src="../assets/images/icons/b_line-icon.png" alt="line">
     </a>
-    <a href="https://m.facebook.com/messages/thread/113573840431146" target="_blank">
-      <img src="../assets/images/icons/b_messenger-icon.png" alt="messenger">
-    </a>
   </div>
 </template>
 

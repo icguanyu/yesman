@@ -11,7 +11,7 @@
           解決爸爸停車困擾，門口可以停車！<br>
           解決媽咪的擔心，我們擁有完整逗小孩的方式．拍出媽咪喜愛的照片。<br>
           解決小孩拒拍的心情，專業的攝影師會犧牲色相討小孩歡心。<br>
-          一個時段一棚的舒適環境，不會受到顧客的影響，舒適居家的感覺讓拍攝心情放鬆。
+          一個時段一棚的舒適環境，不會受到顧客的影響，舒適居家的氛圍，能放鬆心情拍攝。
 
         </article>
         <div class="features">
@@ -30,7 +30,7 @@
             <div class="item"><span class="index">02</span>四十坪立體攝影棚</div>
             <div class="item"><span class="index">03</span>舒適無壓的拍攝環境</div>
             <div class="item"><span class="index">04</span>專業保母證照</div>
-            <div class="item"><span class="index">05</span>哺乳空間、尿布台、熱水器</div>
+            <div class="item"><span class="index">05</span>哺乳空間、尿布台、飲水機</div>
             <div class="item"><span class="index">06</span>大人、小孩服裝齊全</div>
           </div>
         </div>
