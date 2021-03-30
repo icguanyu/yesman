@@ -86,7 +86,13 @@
     },
     created() {
       window.scrollTo(0, 0);
-      this.activeName = this.$route.query.s;
+      let services = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+      if (services.includes(this.$route.query.s)) {
+        this.activeName = this.$route.query.s;
+      } else {
+        this.$router.push("/");
+      }
+
       // if (
       //   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       //     navigator.userAgent
