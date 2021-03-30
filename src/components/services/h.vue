@@ -14,14 +14,13 @@
         </el-card>
       </el-col>
       <el-col :span="12">
-        <el-divider content-position="left">方案內容(擇一)</el-divider>
+        <el-divider content-position="left">方案內容(以下三選一)</el-divider>
         <el-card class="box-card" shadow="hover">
           <div class="service_content">
             <ol>
               <li>2吋照片 12張</li>
               <li>1吋照片 12張</li>
               <li>2吋與1吋照片 各6張</li>
-              <li>(以上三擇一))</li>
             </ol>
           </div>
 
