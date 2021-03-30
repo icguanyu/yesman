@@ -118,7 +118,7 @@
       height: 50vh;
       background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/996294_57001.jpeg");
       background-size: cover;
-      background-position: center center;
+      background-position: center 30%;
       &:after {
         content: "";
         width: 100%;
