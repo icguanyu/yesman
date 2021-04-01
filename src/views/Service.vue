@@ -122,9 +122,9 @@
       justify-content: center;
       width: 100%;
       height: 50vh;
-      background-image: url("https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/3215916/996294_57001.jpeg");
+      background-image: url("../assets/images/others/banner.jpg");
       background-size: cover;
-      background-position: center 30%;
+      background-position: center 25%;
       &:after {
         content: "";
         width: 100%;

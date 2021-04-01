@@ -67,7 +67,7 @@
         .about-bg {
           flex-shrink: 0;
           width: 400px;
-          background-image: url("../assets/images/env/2.jpg");
+          background-image: url("../assets/images/others/about.jpg");
           // margin-bottom: -100px;
         }
       }
