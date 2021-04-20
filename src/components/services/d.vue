@@ -9,7 +9,7 @@
           <div class="service_intro">
             <ol>
               <li>限定<b>兩個月</b>內新生兒</li>
-              <li><b>1</b>位新生兒<b>8</b>個造型</li>
+              <li><b>1</b>位新生兒<b>5</b>個造型</li>
               <li><b>2</b>位大人入鏡（不含服裝造型）</li>
             </ol>
           </div>
