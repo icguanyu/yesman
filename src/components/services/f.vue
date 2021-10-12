@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <div class="title">兒童寫真到「棚」拍攝 - <span>NT$3,880元</span></div>
-    <div class="active">使用五倍券 贈送藍色/粉色大象框</div>
+    <div class="active">使用五倍券 贈送粉藍三合一相框</div>
     <el-row :gutter="20">
       <el-col :span="24">
         <el-card class="box-card" shadow="hover">
