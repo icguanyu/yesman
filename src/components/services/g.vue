@@ -35,7 +35,6 @@
         <el-card class="box-card" shadow="hover">
           <div class="servie_bonuse">
             <ol>
-              <li>30秒側錄影片（攝影師挑選）</li>
               <li>人像似顏繪一張（選擇一張照片）</li>
             </ol>
           </div>
