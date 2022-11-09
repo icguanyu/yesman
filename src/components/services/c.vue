@@ -2,7 +2,6 @@
   <div class="wrap">
     <div class="title">新生兒寫真到「棚」拍攝 - <span>NT$6,000元</span></div>
     <!--5000 改 6000-->
-    <div class="active">使用五倍券 打九折</div>
     <el-row :gutter="20">
       <el-col :span="24">
         <el-card class="box-card" shadow="hover">

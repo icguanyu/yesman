@@ -1,7 +1,6 @@
 <template>
   <div class="wrap">
     <div class="title">孕婦到棚「棚」攝 - <span>NT$6,800元</span></div>
-    <div class="active">使用五倍券贈送8x10相框</div>
     <el-row :gutter="20">
       <el-col :span="24">
         <el-card class="box-card" shadow="hover">
