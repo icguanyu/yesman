@@ -1,14 +1,15 @@
 <template>
   <div class="wrap">
-    <div class="title">韓式證件照 - <span>NT$280/580元</span></div>
+    <div class="title">韓式證件照</div>
 
     <el-row :gutter="20">
       <el-col :span="24">
         <el-card class="box-card" shadow="hover">
           <div class="service_intro">
             <ol>
-              <li>不需化妝直接拍攝。<b>NT$280</b></li>
-              <li>底妝、眼妝（不含假睫毛）唇妝、頭髮自然整理。<b>NT$580</b></li>
+              <li>不含妝髮。<b>NT$350</b></li>
+              <li>含妝髮。<b>NT$580</b></li>
+              <li>七歲以下。<b>NT$450</b></li>
             </ol>
           </div>
         </el-card>
