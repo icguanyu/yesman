@@ -40,14 +40,14 @@ export default {
       services: [
         {
           title: "新生兒寫真到「府」拍攝-A",
-          desc: "三個願望一次滿足：全檔、影片、８套造型。",
-          price: "NT$10,800元",
+          desc: "兩個願望一次滿足：全檔、6套造型。",
+          price: "NT$8,800元",
           key: "a",
         },
         {
           title: "新生兒寫真到「府」拍攝-B",
           desc: "輕鬆在家擁有攝影棚。",
-          price: "NT$7,000元",
+          price: "NT$6,000元",
           key: "b",
         },
         {

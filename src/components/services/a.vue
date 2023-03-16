@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="title">新生兒寫真到「府」拍攝 - <span>NT$10,800元</span></div>
+    <div class="title">新生兒寫真到「府」拍攝 - <span>NT$8,800元</span></div>
     <!--8800 改 10800-->
     <el-row :gutter="20">
       <el-col :span="24">
@@ -9,7 +9,7 @@
             <ol>
               <li>專業團隊到府拍攝</li>
               <li>限定<b>35天</b>內新生兒</li>
-              <li><b>1</b>位新生兒<b>8</b>個造型</li>
+              <li><b>1</b>位新生兒<b>6</b>個造型</li>
               <li><b>2</b>位大人入鏡（不含服裝造型）</li>
               <li class="note">依照地區酌收車馬費（車馬費費用請訊息詢問）</li>
               <li class="note">若樓層高於三樓 沒有電梯 會酌收$200搬運費</li>
@@ -22,13 +22,13 @@
         <el-card class="box-card" shadow="hover">
           <div class="service_content">
             <ol>
-              <li>精修照片全檔案（70張以上）</li>
-              <li>同檔案電子檔全檔案</li>
+              <li>精修照片全檔案（60張以上）</li>
+              <!-- <li>同檔案電子檔全檔案</li>
               <li>6x8 精裝相本一本</li>
-              <li>自選其中30張入相本</li>
+              <li>自選其中30張入相本</li> -->
               <li>16G 木質USB *1</li>
-              <li>8x10相框 *1（同檔案製作）</li>
-              <li>30秒側錄影片（攝影師挑選）</li>
+              <!-- <li>8x10相框 *1（同檔案製作）</li>
+              <li>30秒側錄影片（攝影師挑選）</li> -->
             </ol>
           </div>
         </el-card>
