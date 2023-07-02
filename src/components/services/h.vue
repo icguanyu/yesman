@@ -9,7 +9,7 @@
             <ol>
               <li>不含妝髮。<b>NT$350</b></li>
               <li>含妝髮。<b>NT$580</b></li>
-              <li>七歲以下。<b>NT$450</b></li>
+              <li>12歲以下。<b>NT$450</b></li>
             </ol>
           </div>
         </el-card>

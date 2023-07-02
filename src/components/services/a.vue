@@ -22,7 +22,7 @@
         <el-card class="box-card" shadow="hover">
           <div class="service_content">
             <ol>
-              <li>精修照片全檔案（60張以上）</li>
+              <li>調色電子檔全檔案（自選30張精修）</li>
               <!-- <li>同檔案電子檔全檔案</li>
               <li>6x8 精裝相本一本</li>
               <li>自選其中30張入相本</li> -->

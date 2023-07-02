@@ -47,7 +47,7 @@ export default {
         {
           title: "新生兒寫真到「府」拍攝-B",
           desc: "輕鬆在家擁有攝影棚。",
-          price: "NT$6,000元",
+          price: "NT$6,500元",
           key: "b",
         },
         {

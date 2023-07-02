@@ -34,7 +34,7 @@
         <el-card class="box-card" shadow="hover">
           <div class="servie_bonuse">
             <ol>
-              <li>人像似顏繪一張（選擇一張照片）</li>
+              <li>8x10相框一個</li>
             </ol>
           </div>
         </el-card>

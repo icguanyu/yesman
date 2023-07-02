@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="title">新生兒寫真到「府」拍攝 - <span>NT$6,000元</span></div>
+    <div class="title">新生兒寫真到「府」拍攝 - <span>NT$6,500元</span></div>
     <!--6000 改 7000-->
     <el-row :gutter="20">
       <el-col :span="24">
