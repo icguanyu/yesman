@@ -9,12 +9,6 @@ import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import "./assets/scss/_element-variables.scss"; // 修改 ElementUI 預設變數
 Vue.use(ElementUI);
-/*
-vue-awesome-swiper
-https://github.com/surmon-china/vue-awesome-swiper
-*/
-import Swiper, { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
-Swiper.use([Autoplay, EffectFade, Navigation, Pagination]);
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles

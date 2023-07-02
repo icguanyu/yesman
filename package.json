@@ -14,7 +14,7 @@
     "element-ui": "^2.15.1",
     "jquery": "^3.5.1",
     "particles.js": "^2.0.0",
-    "swiper": "^6.5.0",
+    "swiper": "^5.4.5",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",
     "vue-cool-lightbox": "^2.7.1",

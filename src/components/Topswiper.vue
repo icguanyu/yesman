@@ -28,7 +28,7 @@
 
 <script>
   import "particles.js";
-  import "swiper/swiper-bundle.css";
+  import "swiper/css/swiper.min.css";
   import { Swiper, SwiperSlide } from "vue-awesome-swiper";
   export default {
     name: "top-swiper",
