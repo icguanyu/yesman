@@ -20,10 +20,9 @@
           <div class="service_content">
             <ol>
               <li>精修照片10張</li>
-              <li>同檔案電子檔10張</li>
               <li>6x8 精裝相本一本</li>
               <li>同檔案10張入相本</li>
-              <li>16G 木質USB *1</li>
+              <li>木質USB *1</li>
               <li>8x12無框畫 *1（同檔案製作）</li>
             </ol>
           </div>
@@ -34,9 +33,9 @@
         <el-card class="box-card" shadow="hover">
           <div class="servie_bonuse">
             <ol>
-              <li>精美鑰匙圈一個＋手機支架一個</li>
-              <li>兩位大人（一男一女）各一種淡妝髮</li>
-              <li>木質四格方框一個</li>
+              <li>精美鑰匙圈一個＋手機支架一個（同檔案製作）</li>
+              <li>4x6韓風相框一個</li>
+              <li>造型大象相框一個</li>
             </ol>
           </div>
         </el-card>

@@ -18,11 +18,10 @@
         <el-card class="box-card" shadow="hover">
           <div class="service_content">
             <ol>
-              <li>精修照片8張</li>
-              <li>同檔案電子檔8張</li>
+              <li>精修照片6張</li>
+              <li>木質USB *1</li>
               <!-- <li>4x6 精裝相本一本</li>
               <li>同檔案8張入相本</li> -->
-              <li>16G 木質USB *1</li>
             </ol>
           </div>
         </el-card>
@@ -32,9 +31,9 @@
         <el-card class="box-card" shadow="hover">
           <div class="servie_bonuse">
             <ol>
-              <li>手機支架一個</li>
-              <li>造型鑰匙圈一個</li>
-              <li>珪藻土杯墊一個</li>
+              <li>手機支架一個（同檔案製作）</li>
+              <li>造型鑰匙圈一個（同檔案製作）</li>
+              <li>珪藻土杯墊一個（同檔案製作）</li>
             </ol>
           </div>
         </el-card>

@@ -21,23 +21,22 @@
           <div class="service_content">
             <ol>
               <li>精修照片10張</li>
-              <li>同檔案電子檔10張</li>
               <li>6x8 精裝相本一本</li>
               <li>同檔案10張入相本</li>
-              <li>16G 木質USB *1</li>
+              <li>8x10相框一個（同檔案製作）</li>
             </ol>
           </div>
         </el-card>
       </el-col>
       <el-col :xs="24" :md="12">
-        <el-divider content-position="left">好禮二選一</el-divider>
+        <!-- <el-divider content-position="left">好禮二選一</el-divider>
         <el-card class="box-card" shadow="hover">
           <div class="servie_bonuse">
             <ol>
               <li>8x10相框一個</li>
             </ol>
           </div>
-        </el-card>
+        </el-card> -->
       </el-col>
     </el-row>
     <ServiceCoolLightBox :items="items" />

@@ -41,18 +41,18 @@ export default {
         {
           title: "新生兒寫真到「府」拍攝-A",
           desc: "兩個願望一次滿足：全檔、6套造型。",
-          price: "NT$8,800元",
+          price: "NT$9,800元",
           key: "a",
         },
         {
           title: "新生兒寫真到「府」拍攝-B",
           desc: "輕鬆在家擁有攝影棚。",
-          price: "NT$6,500元",
+          price: "NT$7,800元",
           key: "b",
         },
         {
           title: "新生兒寫真到「棚」拍攝-A",
-          desc: "獨享40坪攝影棚。",
+          desc: "獨享60坪攝影棚。",
           price: "NT$6,000元",
           key: "c",
         },
@@ -71,7 +71,7 @@ export default {
         {
           title: "兒童寫真到棚拍攝-B",
           desc: "超值體驗價。",
-          price: "NT$3,800元",
+          price: "NT$3,880元",
           key: "f",
         },
         {
