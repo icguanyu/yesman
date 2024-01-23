@@ -11,9 +11,9 @@
     </swiper>
     <div id="particles-js">
       <div class="title">
-        <h3>用鏡頭留下最珍貴的記憶</h3>
+        <h3>新生兒攝影，再不拍就長大了</h3>
         <h1>YESMAN</h1>
-        <h2>Photography Studio</h2>
+        <h2>新生兒攝影˙兒童攝影˙全家福</h2>
       </div>
     </div>
     <div class="scroll">
@@ -136,6 +136,7 @@
     .title {
       color: white;
       text-align: center;
+      user-select: none;
       h3 {
         font-weight: 300;
         letter-spacing: 8px;
