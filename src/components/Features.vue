@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="body">
-        <div class="problems">
+        <div class="problems" data-aos="fade-down">
           <div class="problem"><span>01</span>媽咪爸比帶孩子們拍照最怕...</div>
           <div class="problem"><span>02</span>寶寶怕生愛哭怎麼辦?</div>
           <div class="problem">
@@ -19,7 +19,7 @@
           </div>
         </div>
 
-        <div class="contact">
+        <div class="contact" data-aos="fade-down">
           <p><i class="el-icon-phone"></i>不用擔心，通通交給YES MAN！</p>
           <a
             class="el-button el-button--success"
@@ -122,11 +122,38 @@ export default {
           flex-direction: column;
           align-items: flex-start;
           font-size: 2rem;
-          margin-bottom: 5px;
+          margin-bottom: 20px;
           span {
             margin-left: 0;
             margin-top: 5px;
             font-size: 1.6rem;
+          }
+        }
+      }
+      .body {
+        .problems {
+          .problem {
+            font-size: 16px;
+            span {
+              width: 35px;
+              height: 35px;
+              line-height: 28px;
+              font-size: 14px;
+              margin-right: 30px;
+              &:after {
+                width: 20px;
+                right: -20px;
+              }
+            }
+          }
+        }
+        .contact {
+          text-align: center;
+          p {
+            font-size: 18px;
+          }
+          a {
+            width: 140px;
           }
         }
       }

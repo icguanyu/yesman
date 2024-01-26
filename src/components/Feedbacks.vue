@@ -37,17 +37,6 @@
                   看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
                   man，從一開始的諮詢到拍攝和引導都非常專業
                   諮詢時，服務人員解決我很多問題👍🏻<br />
-                  因為月中時月中有贈送拍攝可以拿一張照片免費，但因為都蠻喜歡的所以就還是加價挑了<br />
-                  今天拍攝前攝影師-罐頭<br />
-                  就詢問我有沒有在月中拍攝，我跟他說有，他就請我拿照片給他看
-                  目的就是為了避開與月中拍攝類似的照片，我覺得這點很棒，不會讓我花了兩筆錢卻拍攝到類似的東西👏🏻<br />
-                  安撫師-小孟 也是很專業👍🏻 一直安撫著我們家妹妹的情緒
-                  整個過程幾乎都沒有聽到寶寶哭聲，讓媽媽我根本也不用管小孩，可以在旁邊玩手機跟攝影師、安撫師聊天
-                  這一次的拍攝讓我覺得很愉快，看到拍攝原檔後更期待完成品了呢❤️
-                  攝影師：罐頭<br />
-                  安撫師：小孟<br />
-                  謝謝你們今天的拍攝～ <br />
-                  大推yesman專業攝影工作室
                 </div>
               </div>
             </swiper-slide>
@@ -68,16 +57,88 @@
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="content">內容3</div>
+              <div class="content">
+                <div class="customer">
+                  <div class="avatar avatar-female"></div>
+                  <div class="name">胡小姐</div>
+                </div>
+                <div class="stars">
+                  <img
+                    src="@/assets/images/icons/star.svg"
+                    alt=""
+                    v-for="i in 5"
+                    :key="i"
+                  />
+                </div>
+                <div class="comments">
+                  從得知懷孕後就一直找合適的新生兒寫真拍攝
+                  看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
+                  man，從一開始的諮詢到拍攝和引導都非常專業
+                </div>
+              </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="content">內容4</div>
+              <div class="content">
+                <div class="customer">
+                  <div class="avatar avatar-female"></div>
+                  <div class="name">胡小姐</div>
+                </div>
+                <div class="stars">
+                  <img
+                    src="@/assets/images/icons/star.svg"
+                    alt=""
+                    v-for="i in 5"
+                    :key="i"
+                  />
+                </div>
+                <div class="comments">
+                  從得知懷孕後就一直找合適的新生兒寫真拍攝
+                  看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
+                  man，從一開始的諮詢到拍攝和引導都非常專業
+                </div>
+              </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="content">內容5</div>
+              <div class="content">
+                <div class="customer">
+                  <div class="avatar avatar-female"></div>
+                  <div class="name">胡小姐</div>
+                </div>
+                <div class="stars">
+                  <img
+                    src="@/assets/images/icons/star.svg"
+                    alt=""
+                    v-for="i in 5"
+                    :key="i"
+                  />
+                </div>
+                <div class="comments">
+                  從得知懷孕後就一直找合適的新生兒寫真拍攝
+                  看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
+                  man，從一開始的諮詢到拍攝和引導都非常專業
+                </div>
+              </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="content">內容6</div>
+              <div class="content">
+                <div class="customer">
+                  <div class="avatar avatar-female"></div>
+                  <div class="name">胡小姐</div>
+                </div>
+                <div class="stars">
+                  <img
+                    src="@/assets/images/icons/star.svg"
+                    alt=""
+                    v-for="i in 5"
+                    :key="i"
+                  />
+                </div>
+                <div class="comments">
+                  從得知懷孕後就一直找合適的新生兒寫真拍攝
+                  看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
+                  man，從一開始的諮詢到拍攝和引導都非常專業
+                </div>
+              </div>
             </swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
           </swiper>
@@ -99,7 +160,7 @@ export default {
   data() {
     return {
       swiperOptions: {
-        slidesPerView: 3,
+        slidesPerView: 1.2,
         spaceBetween: 15,
         loop: true,
         // effect: "fade",
@@ -114,6 +175,12 @@ export default {
         //   stopOnLastSlide: false,
         //   disableOnInteraction: false,
         // },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
       },
     };
   },
@@ -158,8 +225,8 @@ export default {
 
             .content {
               border: 1px solid #ddd;
-            
-              border-radius: 8px;
+
+              border-radius: 20px;
               padding: 10px;
               .customer {
                 display: flex;

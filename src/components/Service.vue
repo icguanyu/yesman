@@ -170,6 +170,7 @@ export default {
       margin-right: 10px;
       width: 180px;
       height: 140px;
+      border-radius: 10px;
     }
     .content {
       max-width: 240px;
