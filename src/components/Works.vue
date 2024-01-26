@@ -117,7 +117,7 @@ export default {
     });
   },
   mounted() {
-    this.importAll(require.context("@/assets/images/最新作品", true, /\.jpg$/));
+    this.importAll(require.context("@/assets/images/作品All", true, /\.jpg$/));
   },
   methods: {
     importAll(r) {

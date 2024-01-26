@@ -136,6 +136,7 @@ export default {
   #footer {
     .content {
       flex-direction: column;
+      padding-top: 40px;
       .block {
         width: 100%;
         padding: 0 5%;
