@@ -19,8 +19,8 @@
         <div class="feedbacks">
           <swiper class="swiper" :options="swiperOptions">
             <swiper-slide>
-              <div class="content">
-                <div class="customer">
+              <div class="content content-image">
+                <!-- <div class="customer">
                   <div class="avatar avatar-female"></div>
                   <div class="name">胡小姐</div>
                 </div>
@@ -37,107 +37,38 @@
                   看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
                   man，從一開始的諮詢到拍攝和引導都非常專業
                   諮詢時，服務人員解決我很多問題👍🏻<br />
-                </div>
+                </div> -->
+                <img src="@/assets/images/comments/01.jpg" alt="" />
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="content">
-                <div class="customer">
-                  <div class="avatar avatar-male"></div>
-                  <div class="name">吳先生</div>
-                </div>
-                <div class="stars">
-                  <img
-                    src="@/assets/images/icons/star.svg"
-                    alt=""
-                    v-for="i in 5"
-                    :key="i"
-                  />
-                </div>
+              <div class="content content-image">
+                <img src="@/assets/images/comments/02.jpg" alt="" />
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="content">
-                <div class="customer">
-                  <div class="avatar avatar-female"></div>
-                  <div class="name">胡小姐</div>
-                </div>
-                <div class="stars">
-                  <img
-                    src="@/assets/images/icons/star.svg"
-                    alt=""
-                    v-for="i in 5"
-                    :key="i"
-                  />
-                </div>
-                <div class="comments">
-                  從得知懷孕後就一直找合適的新生兒寫真拍攝
-                  看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
-                  man，從一開始的諮詢到拍攝和引導都非常專業
-                </div>
+              <div class="content content-image">
+                <img src="@/assets/images/comments/03.jpg" alt="" />
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="content">
-                <div class="customer">
-                  <div class="avatar avatar-female"></div>
-                  <div class="name">胡小姐</div>
-                </div>
-                <div class="stars">
-                  <img
-                    src="@/assets/images/icons/star.svg"
-                    alt=""
-                    v-for="i in 5"
-                    :key="i"
-                  />
-                </div>
-                <div class="comments">
-                  從得知懷孕後就一直找合適的新生兒寫真拍攝
-                  看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
-                  man，從一開始的諮詢到拍攝和引導都非常專業
-                </div>
+              <div class="content content-image">
+                <img src="@/assets/images/comments/04.jpg" alt="" />
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="content">
-                <div class="customer">
-                  <div class="avatar avatar-female"></div>
-                  <div class="name">胡小姐</div>
-                </div>
-                <div class="stars">
-                  <img
-                    src="@/assets/images/icons/star.svg"
-                    alt=""
-                    v-for="i in 5"
-                    :key="i"
-                  />
-                </div>
-                <div class="comments">
-                  從得知懷孕後就一直找合適的新生兒寫真拍攝
-                  看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
-                  man，從一開始的諮詢到拍攝和引導都非常專業
-                </div>
+              <div class="content content-image">
+                <img src="@/assets/images/comments/05.jpg" alt="" />
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="content">
-                <div class="customer">
-                  <div class="avatar avatar-female"></div>
-                  <div class="name">胡小姐</div>
-                </div>
-                <div class="stars">
-                  <img
-                    src="@/assets/images/icons/star.svg"
-                    alt=""
-                    v-for="i in 5"
-                    :key="i"
-                  />
-                </div>
-                <div class="comments">
-                  從得知懷孕後就一直找合適的新生兒寫真拍攝
-                  看了好多家，希望找一個不會太貴又可以照片全拿的～ 找到了yes
-                  man，從一開始的諮詢到拍攝和引導都非常專業
-                </div>
+              <div class="content content-image">
+                <img src="@/assets/images/comments/06.jpg" alt="" />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="content content-image">
+                <img src="@/assets/images/comments/07.jpg" alt="" />
               </div>
             </swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
@@ -160,7 +91,7 @@ export default {
   data() {
     return {
       swiperOptions: {
-        slidesPerView: 1.2,
+        slidesPerView: 1,
         spaceBetween: 15,
         loop: true,
         // effect: "fade",
@@ -177,7 +108,7 @@ export default {
         // },
         breakpoints: {
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
         },
@@ -219,15 +150,15 @@ export default {
 
           .swiper-slide {
             height: 100%;
+            width: fit-content;
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-
             .content {
               border: 1px solid #ddd;
-
               border-radius: 20px;
               padding: 10px;
+              overflow: hidden;
               .customer {
                 display: flex;
                 align-items: center;
@@ -255,6 +186,12 @@ export default {
                 font-family: monospace;
                 font-weight: 400;
                 line-height: 18px;
+              }
+            }
+            .content-image {
+              padding: 0;
+              img {
+                width: 100%;
               }
             }
           }
