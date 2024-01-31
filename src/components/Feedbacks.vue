@@ -127,6 +127,7 @@ export default {
   padding-bottom: 100px;
   .content {
     margin-bottom: 30px;
+    max-width: 1280px;
     .head {
       .title {
         font-size: 4rem;
