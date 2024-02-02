@@ -12,31 +12,45 @@
         <div class="cates">
           <div
             class="cate"
-            :class="{ active: active === '作品All' }"
-            @click="chagneCateAll"
-          >
-            全部
-          </div>
-          <div
-            class="cate"
-            :class="{ active: active === '作品A' }"
+            :class="{ active: active === '作品_新生兒' }"
             @click="chagneCateA"
           >
-            作品A
+            新生兒
           </div>
           <div
             class="cate"
-            :class="{ active: active === '作品B' }"
+            :class="{ active: active === '作品_寶寶' }"
             @click="chagneCateB"
           >
-            作品B
+            寶寶
           </div>
           <div
             class="cate"
-            :class="{ active: active === '作品C' }"
+            :class="{ active: active === '作品_兒童' }"
             @click="chagneCateC"
           >
-            作品C
+            兒童
+          </div>
+          <div
+            class="cate"
+            :class="{ active: active === '作品_孕婦' }"
+            @click="chagneCateD"
+          >
+            孕婦
+          </div>
+          <div
+            class="cate"
+            :class="{ active: active === '作品_家庭' }"
+            @click="chagneCateE"
+          >
+            家庭
+          </div>
+          <div
+            class="cate"
+            :class="{ active: active === '作品_寵物' }"
+            @click="chagneCateF"
+          >
+            寵物
           </div>
         </div>
         <!-- <div class="mySwiper">
@@ -108,7 +122,7 @@ export default {
       enableScrollLock: window.innerWidth < 768 ? true : false,
       items: [],
       index: null,
-      active: "作品All",
+      active: "作品_新生兒",
     };
   },
   created() {
@@ -117,7 +131,7 @@ export default {
     });
   },
   mounted() {
-    this.importAll(require.context("@/assets/images/作品All", true, /\.jpg$/));
+    this.importAll(require.context("@/assets/images/作品_新生兒", true, /\.jpg$/));
   },
   methods: {
     importAll(r) {
@@ -125,23 +139,30 @@ export default {
       r.keys().forEach((key, idx) => (imgs[idx] = r(key)));
       this.items = imgs;
     },
-    chagneCateAll() {
-      this.active = "作品All";
-      this.importAll(
-        require.context("@/assets/images/作品All", true, /\.jpg$/)
-      );
-    },
+   
     chagneCateA() {
-      this.active = "作品A";
-      this.importAll(require.context("@/assets/images/作品A", true, /\.jpg$/));
+      this.active = "作品_新生兒";
+      this.importAll(require.context("@/assets/images/作品_新生兒", true, /\.jpg$/));
     },
     chagneCateB() {
-      this.active = "作品B";
-      this.importAll(require.context("@/assets/images/作品B", true, /\.jpg$/));
+      this.active = "作品_寶寶";
+      this.importAll(require.context("@/assets/images/作品_寶寶", true, /\.jpg$/));
     },
     chagneCateC() {
-      this.active = "作品C";
-      this.importAll(require.context("@/assets/images/作品C", true, /\.jpg$/));
+      this.active = "作品_兒童";
+      this.importAll(require.context("@/assets/images/作品_兒童", true, /\.jpg$/));
+    },
+    chagneCateD() {
+      this.active = "作品_孕婦";
+      this.importAll(require.context("@/assets/images/作品_孕婦", true, /\.jpg$/));
+    },
+    chagneCateE() {
+      this.active = "作品_家庭";
+      this.importAll(require.context("@/assets/images/作品_家庭", true, /\.jpg$/));
+    },
+    chagneCateF() {
+      this.active = "作品_寵物";
+      this.importAll(require.context("@/assets/images/作品_寵物", true, /\.jpg$/));
     },
   },
 };
@@ -181,8 +202,7 @@ export default {
       margin-bottom: 20px;
       .cate {
         cursor: pointer;
-        flex: 1;
-        padding: 10px;
+        padding: 10px 30px;
         text-align: center;
         border-radius: 3px;
         border: 1px solid #c9c9c9;
@@ -293,10 +313,13 @@ export default {
       }
       .body {
         .cates {
-          flex-direction: column;
+          flex-wrap: wrap;
           .cate {
+            flex-shrink: 0;
             margin-left: 0;
+            margin-right: 10px;
             margin-bottom: 10px;
+         
           }
         }
       }
