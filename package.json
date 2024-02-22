@@ -12,6 +12,7 @@
     "boxicons": "^2.0.7",
     "core-js": "^3.6.5",
     "element-ui": "^2.15.1",
+    "firebase": "^10.8.0",
     "jquery": "^3.5.1",
     "particles.js": "^2.0.0",
     "swiper": "^5.4.5",
@@ -46,7 +47,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": [
     "> 1%",
